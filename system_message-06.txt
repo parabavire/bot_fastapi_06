@@ -1,0 +1,7122 @@
+****No debes contestar cosas que estén fuera de este contexto, si hay alguna consulta fuera de este contexto, niégate amablemente
+a responder y recuerda tu propósito.****
+
+Te voy a dar la transcripción de videos que describen de forma detallada el funcionamiento de algunos módulos de odoo.
+Con este contexto, necesito resolver dudas sobre algunos casos de uso.
+
+Cuando contestes, hazlo como un instructor experto en odoo, haciendo referencia a los videos, una breve descripción de
+lo que tratan los videos, el link correspondiente y el minuto donde puedo encontrar la referencia.  Indica porque la solución planteada en ese video aplicaría a mi caso de uso.
+También especifica la marca de tiempo correspondiente de donde sacas la referencia.
+
+
+****Ejemplo de interacción:****
+
+Usuario:
+
+de que formas puedo generar leads de forma automática en el modulo crm?
+
+Respuesta:
+
+¡Excelente pregunta! Generar leads de forma automática es una de las funcionalidades más potentes de Odoo para optimizar el trabajo de tu equipo de ventas y asegurarte de no perder ninguna oportunidad. A continuación, te detallo las formas en las que puedes generar leads automáticamente en el módulo CRM, basándome en la información de los videos.
+
+---
+
+### **Formas de Generar Leads Automáticamente en Odoo CRM**
+
+Existen varios métodos para capturar leads de manera automática, y la elección dependerá de tus canales de comunicación con los clientes. Aquí te los explico:
+
+#### **1. A través de Formularios en tu Sitio Web**
+
+Este es uno de los métodos más comunes y efectivos. Puedes crear formularios de contacto, solicitud de cotización o cualquier otro formulario en tu sitio web de Odoo, y configurar que cada envío genere un lead automáticamente en tu CRM.
+
+*   **Video de Referencia:** **1.13 Lead Generation - Forms & Email Aliases | Odoo CRM**
+    *   **Link:** https://www.youtube.com/watch?v=hVLEu7I9OUg
+    *   **Descripción:** Este video explica cómo utilizar formularios web y alias de correo para generar leads automáticamente. Muestra paso a paso cómo configurar un formulario en el sitio web para que la información ingresada por el cliente se convierta en un nuevo lead en el CRM.
+    *   **Aplicación a tu caso:** Como se muestra en el video, al editar tu sitio web en Odoo, puedes arrastrar y soltar un bloque de "Formulario" (**minuto 1:54**). En la configuración de este formulario, en la opción "Acción", puedes seleccionar "Crear una oportunidad". De esta manera, cada vez que un visitante complete y envíe el formulario desde tu página web, se creará un lead o una oportunidad en tu pipeline de CRM con toda la información proporcionada (**minuto 2:27**).
+
+#### **2. A través de un Alias de Correo Electrónico**
+
+Puedes asignar una dirección de correo electrónico específica a tu equipo de ventas. Cualquier correo que se envíe a esta dirección se convertirá automáticamente en un lead en tu CRM. Esto es ideal para centralizar las solicitudes que llegan por email.
+
+*   **Video de Referencia:** **1.13 Lead Generation - Forms & Email Aliases | Odoo CRM**
+    *   **Link:** https://www.youtube.com/watch?v=hVLEu7I9OUg
+    *   **Descripción:** Además de los formularios, este video también cubre la configuración de alias de correo para la generación de leads.
+    *   **Aplicación a tu caso:** En los ajustes de tu equipo de ventas dentro del módulo CRM, puedes definir un alias de correo, por ejemplo, `ventas@tuempresa.odoo.com`. Como se detalla en el video a partir del **minuto 4:10**, una vez configurado, cualquier correo enviado a esa dirección creará un nuevo lead. El asunto del correo se convierte en el título del lead y el cuerpo del correo y los archivos adjuntos se guardan en el chatter del lead, asegurando que no se pierda ninguna información.
+
+#### **3. A través de Visitantes del Sitio Web (con Créditos)**
+
+Odoo ofrece una funcionalidad avanzada llamada "Generación de Leads" que identifica a los visitantes de tu sitio web (incluso si no llenan un formulario) y crea leads a partir de esa información, siempre que cumplan con ciertos criterios que tú establezcas (como país, industria, etc.).
+
+*   **Video de Referencia:** **1.14 Lead Generation - Events, Appointments, and Website Visitors | Odoo CRM**
+    *   **Link:** https://www.youtube.com/watch?v=HFQ1c-VV3Qw
+    *   **Descripción:** Este video muestra varias formas avanzadas de generar leads, incluyendo la identificación de visitantes del sitio web.
+    *   **Aplicación a tu caso:** Como se explica a partir del **minuto 5:10**, puedes configurar reglas para que Odoo genere leads a partir de las visitas a tu sitio web. Por ejemplo, puedes crear una regla para que se genere un lead cada vez que una empresa de tecnología de un país específico visite tu página (**minuto 6:42**). Esta función utiliza la dirección IP y otros datos para identificar a la empresa visitante. Es importante mencionar que esta funcionalidad consume créditos de Odoo IAP (In-App Purchase).
+
+#### **4. A través de Citas Agendadas**
+
+Si ofreces la posibilidad de agendar citas o consultas a través de tu sitio web, puedes configurar Odoo para que cada cita agendada genere automáticamente un lead o una oportunidad.
+
+*   **Video de Referencia:** **1.14 Lead Generation - Events, Appointments, and Website Visitors | Odoo CRM**
+    *   **Link:** https://www.youtube.com/watch?v=HFQ1c-VV3Qw
+    *   **Descripción:** El video también cubre la generación de leads a partir de la programación de citas.
+    *   **Aplicación a tu caso:** Al configurar un tipo de cita en la aplicación **Calendario** o **Sitio Web**, tienes la opción de "Crear oportunidades" (**minuto 4:00**). Al marcar esta casilla, cada vez que un cliente potencial agende una cita a través de tu sitio web, se creará un lead en el CRM, permitiendo un seguimiento inmediato por parte de tu equipo de ventas.
+
+### **Resumen de las Formas de Generación Automática de Leads**
+
+1.  **Formularios Web:** Ideal para capturar leads de manera proactiva desde tu sitio web.
+2.  **Alias de Correo:** Perfecto para centralizar todas las consultas que llegan por email.
+3.  **Visitantes del Sitio Web:** Una herramienta potente para identificar prospectos que aún no te han contactado directamente (requiere créditos).
+4.  **Agendamiento de Citas:** Excelente si tu modelo de negocio incluye consultas o reuniones iniciales.
+
+Estos métodos te permitirán construir un sistema robusto y automatizado para la captación de leads, liberando a tu equipo para que se concentre en lo que mejor sabe hacer: ¡vender
+
+
+****La información es la siguiente:****
+
+7.	Módulo Ventas
+7.1	Sales Basics | Odoo Sales
+Link: https://www.youtube.com/watch?v=IwvVR2H7gvE
+0:05
+Hola de nuevo, Odooers.
+0:07
+Las empresas pueden ofrecer sus productos o servicios a los clientes de varias formas.
+0:12
+Pueden configurar una tienda en línea con un comercio electrónico,
+0:15
+abrir una tienda física o dejar que los vendedores se encarguen de hacer el trabajo.
+0:20
+La mayoría combinan estos métodos hoy en día.
+0:24
+Hoy te mostraré los conceptos básicos de Ventas
+0:26
+y donde encontrar los ajustes y funciones que la convierten en la herramienta ideal.
+0:32
+Muchos ingresos vienen de esta aplicación, así que es importante conocer todo.
+0:36
+Vayamos directo a la base de datos.
+0:40
+Comencemos en el tablero de Ventas.
+0:42
+Por defecto, Odoo muestra las cotizaciones del usuario actual
+0:46
+como lo indica el filtro de la barra de búsqueda.
+0:48
+Al eliminarlo, las cotizaciones y órdenes en la base de datos
+0:52
+aparecen con su respectiva información en la vista de lista.
+0:56
+Puedes verlas en otro formato al hacer clic en las opciones del lado derecho.
+1:02
+Haré clic en "Configuración" y "Ajustes" para abrir esa página.
+1:07
+Ahí están las opciones de productos, precios, cotizaciones, órdenes y más.
+1:13
+Si quieres personalizar tus ventas, aquí puedes hacerlo.
+1:17
+Si buscas una forma más específica de configurar estos aspectos,
+1:20
+en el menú "Configuración" podrás acceder a ellos.
+1:25
+Al hacer clic en el menú desplegable "Reportes"
+1:28
+Odoo muestra varias páginas relacionadas con los elementos de ventas.
+1:32
+Como el tablero, estas páginas tienen varias opciones de visualización
+1:36
+y de filtrar y agrupar resultados para crear el reporte ideal.
+1:40
+Consulta otros tutoriales y documentación para conocer más.
+1:43
+Al seleccionar "Productos" y luego "Productos"
+1:46
+aparecerá una página con todos los productos de la base de datos.
+1:50
+Haz clic en "Nuevo" para crearlos
+1:53
+o haz clic en su respectiva tarjeta para modificar uno.
+1:58
+Allí hallarás varios campos, pestañas, opciones, botones y métricas para personalizar y analizar.
+2:05
+En el menú "Productos" encontrarás enlaces a las variantes de productos,
+2:09
+listas de precios, descuentos, lealtad, tarjetas de regalo y billetera electrónica.
+2:14
+Tenemos tutoriales para esas opciones, mantente al tanto para aprender más.
+2:18
+Al hacer clic en "Por facturar" aparecen enlaces a dos páginas distintas.
+2:23
+Una es para las órdenes que debemos facturar, "Órdenes a facturar".
+2:26
+Las otra es "Órdenes para crear ventas adicionales".
+2:31
+Por último está el menú "Órdenes".
+2:33
+Ahí están las páginas para cotizaciones, órdenes, equipos de ventas y clientes.
+2:38
+Eso es todo, Odooers.
+2:40
+Estos son los conceptos básicos de Ventas.
+2:43
+Ahora podrás encontrar lo necesario para optimizar tus ventas.
+2:46
+Revisa nuestros tutoriales y documentación para aprender más sobre esta aplicación.
+2:52
+Nos vemos pronto.
+
+7.2	Your First Quotation | Odoo Sales
+Link: https://www.youtube.com/watch?v=Q0MKrE5YfnQ
+0:05
+Hola, hablemos sobre los vendedores y lo que más utilizan, las cotizaciones.
+0:13
+Te enseñare a crearlas y enviarlas con Odoo.
+0:17
+Vayamos directo a la base de datos.
+0:20
+Comencemos en el tablero de Ventas.
+0:22
+Puedes abrir esta página si haces clic en "Órdenes" y en "Cotizaciones".
+0:27
+Haré clic en "Nuevo" para crear una cotización.
+0:31
+Este es un formulario de cotización vacío. Completémoslo.
+0:34
+Agregaré un cliente, Deco Addict.
+0:37
+Si el cliente ya está en la base de datos sus direcciones se completan en automático.
+0:43
+También la lista de precios si están en una.
+0:46
+Esta lista incluye los precios o reglas que Odoo utiliza para definir el precio para cierto cliente.
+0:52
+Agrega la información a esos campos si es un cliente nuevo.
+0:58
+En "Plantilla de cotización" elige una preconfigurada,
+1:01
+completará los campos y pestañas necesarios con sus opciones y configuraciones.
+1:06
+Créalas y modifícalas desde "Configuración" y "Plantillas de cotización".
+1:13
+Hay un tutorial sobre estas plantillas. Revísalo para aprender más.
+1:19
+Podemos agregar su fecha de vencimiento a la derecha.
+1:22
+Si la cotización incluye una suscripción o un servicio de algún tipo,
+1:27
+podremos seleccionar el plan recurrente en ese campo.
+1:31
+Abajo de eso está el campo de lista de precios.
+1:35
+Ahí puedes aplicar una lista de precios a una cotización y a un cliente.
+1:39
+Por último está el campo "Condiciones de pago" para elegir los términos de esta cotización.
+1:46
+En "Líneas de la orden" podemos agregar productos,
+1:49
+ajustar cantidades, modificar precios, agregar o eliminar impuestos y más.
+1:53
+Haré clic en "Agregar un producto" y elegiré las pantallas acústicas.
+1:59
+Este producto tiene variantes. Aparecerá una ventana.
+2:02
+Ahí seleccionaré la variante deseada.
+2:04
+Este cliente quiere dos pantallas blancas. Las elegiré y cambiaré la cantidad a dos.
+2:12
+Ahora solo debo de hacer clic en Confirmar.
+2:15
+Los productos aparecerán en "Líneas de la orden".
+2:19
+También podemos agregar productos con el botón "Catálogo".
+2:23
+Luego seleccionamos los productos y la cantidad en esta página.
+2:27
+Agregaré el escritorio personalizable.
+2:31
+La cantidad será 1.
+2:33
+Ahora usaré las migas de pan para regresar a la cotización.
+2:39
+El escritorio del catálogo ahora está en la pestaña "Líneas de la orden".
+2:45
+Odoo también permite usar secciones y notas para organizar la cotización.
+2:51
+Por ejemplo, podemos agregar una sección y escribir "Muebles para oficina".
+3:00
+Podemos moverla a cualquier lugar en esta pestaña.
+3:03
+La pondré arriba del escritorio que agregué.
+3:08
+Para incluir una nota hacemos clic en "Agregar una nota".
+3:11
+Podremos dejar un mensaje sobre un producto, como "Uno de nuestros modelos más nuevos".
+3:23
+La arrastraré abajo de las pantallas.
+3:28
+Abajo de estas líneas hay botones para hacer clic,
+3:30
+como código de cupón, recompensa, descuentos y agregar envío.
+3:36
+Para ver más detalles en la pestaña de líneas de la orden
+3:39
+haz clic en el icono que está arriba en la columna derecha.
+3:43
+Aparecerá un menú con más información útil que podrás agregar a la pestaña.
+3:48
+Vayamos a la pestaña "Productos opcionales". Es parecida a la de líneas de la orden.
+3:54
+Podrás ofrecer bienes complementarios a los clientes mientras compran.
+3:58
+Esta cotización incluye un escritorio. Agregaré la silla como producto opcional.
+4:03
+Puede que el cliente la agregue a su orden.
+4:06
+Haré clic en "Agregar un producto" y elegiré la silla de oficina.
+4:13
+Puedes agregar todos los productos opcionales que quieras.
+4:18
+En "Creador de cotizaciones" hay algunas opciones para elaborar una en formato PDF.
+4:26
+Podemos agregar un encabezado personalizado y documentos para proporcionar información.
+4:32
+Puedes personalizar de diferentes maneras.
+4:35
+No te preocupes, veremos eso en otro video. Manténte al pendiente.
+4:40
+O consulta la documentación para obtener más información.
+4:44
+Para agregar esos elementos al PDF haremos clic en los botones grises,
+4:48
+incluirán los elementos preconfigurados.
+4:52
+En la pestaña "Otra información" hay varios campos útiles
+4:56
+relacionados con esta cotización para ventas, facturación y entrega.
+5:01
+Adáptalos a las necesidades de tu empresa.
+5:05
+En "Notas" podemos incluir notas internas para los empleados.
+5:12
+Considera que el cliente no las verá.
+5:15
+Al terminar haz clic en el botón "Previsualizar", está en la parte superior de la página.
+5:22
+Aparecerá la cotización que los clientes verán en su portal de clientes.
+5:26
+Podremos ver los productos, secciones, notas, productos opcionales y más.
+5:34
+Presiona "Volver al modo de edición" en el cuadro azul para regresar al formulario de cotización.
+5:40
+Volveremos al punto de partida.
+5:43
+Imaginemos que creaste una cotización y ya está lista.
+5:47
+Con el botón "Enviar por correo electrónico" la enviarás al cliente para que la confirme.
+5:54
+Aparecerá una ventana con una plantilla y un mensaje
+5:58
+que podemos modificar, además del PDF de la cotización.
+6:02
+Cuando todo esté listo, haz clic en "Enviar" para que el cliente la reciba.
+6:08
+Esto cierra la ventana y cambia el estado a "Cotización enviada".
+6:13
+Digamos que el cliente confirmó la cotización.
+6:18
+Se convertirá en una orden de venta al hacer clic en "Confirmar".
+6:23
+Es muy fácil. Eso es todo, Odooers.
+6:27
+Esos son los fundamentos de la aplicación Ventas y cómo crear y enviar una cotización.
+6:32
+Revisa otros tutoriales y la documentación para aprender más sobre Ventas de Odoo.
+6:37
+Nos vemos pronto.
+7.3	Create Products | Odoo Sales
+Link: https://www.youtube.com/watch?v=LvGCY5rXISg
+0:05
+Hola Odooers, hoy aprenderemos a crear productos en la aplicación Ventas.
+0:11
+Podemos configurar bienes y servicios, aplicar atributos y variantes,
+0:15
+agregar productos opcionales, accesorios y alternativos y más.
+0:20
+Vayamos a la base de datos para ver lo fácil que es configurar productos.
+0:25
+Desde nuestro tablero de ventas iremos a "Productos" y después "Productos".
+0:30
+Haremos clic en "Nuevo"
+0:33
+y escribiremos "Silla para oficina moderna", porque es lo que quiero vender.
+0:42
+Agregaremos una imagen de nuestro producto para los clientes.
+0:46
+Pasaremos el cursos por encima de la cámara y haremos clic en el lápiz,
+0:51
+buscamos el archivo que queremos subir y lo seleccionamos.
+0:56
+Abajo veremos algunas opciones. Por defecto "Ventas" y "Compra" estarán seleccionadas.
+1:01
+"Ventas" indica que la podemos vender y "Compra" que debemos comprarla de un proveedor.
+1:06
+Solo selecciona "suscripción" si estás creando una suscripción o un servicio.
+1:11
+También tenemos un tutorial sobre suscripciones.
+1:15
+En la pestaña "Información general" primero está el campo "Tipo de producto".
+1:19
+Aquí indicamos si es un producto o servicio.
+1:23
+Los campos cambian si el producto es un servicio.
+1:28
+En este caso primero deberíamos seleccionar si se debe crear algo en "Crear en la orden".
+1:33
+Por defecto la opción selecciona es "Nada" pero Odoo puede crear una tarea,
+1:38
+proyecto y tarea, o solo un proyecto cuando se compra este artículo.
+1:44
+Con la integración con Proyectos los empleados sabrán que deben hacer un servicio
+1:50
+sin perder al cliente entre la multitud.
+1:56
+También tenemos varias opciones de facturación.
+1:59
+La opción predeterminada es "Precio fijo o de prepago"
+2:05
+o puede ser "Con base en los objetivos" o "Con base en cantidad entregada".
+2:11
+Estas últimas dos opciones indican que los empleados facturan a los clientes
+2:18
+conforme entregan el servicio al cliente.
+2:21
+Hay metas que se logran durante el proyecto y queremos facturar a los clientes en ese momento.
+2:28
+Por ejemplo, en un servicio de remodelación
+2:31
+podemos facturar el primer estimado, luego facturar después de la demolición, etc.
+2:36
+Podemos aplicar la misma mentalidad a "Con base en cantidad entregada".
+2:41
+La diferencia es que facturamos cantidades, no metas.
+2:49
+Abajo está la casilla "Planear servicios". Si la marcamos aparecerá un campo adicional.
+2:56
+Aquí indicamos a qué tipo de empleado se le debe asignar este servicio.
+3:01
+Por ejemplo, para solución de problemas, asignaremos al técnico de mantenimiento.
+3:06
+Odoo programará un turno para ellos en Planeación cuando se ordene el servicio.
+3:14
+El producto regresará al tipo "bienes" porque una silla no es un servicio.
+3:21
+Si no tuviéramos que rastrear la cantidad exacta de un artículo,
+3:24
+como la cantidad de plumas en la oficina, podríamos ignorar la opción "Rastrear inventario".
+3:30
+Como queremos rastrear nuestras sillas, marcaremos esta opción.
+3:37
+Aparecerán más botones inteligentes y campos para decidir cómo rastrear el inventario.
+3:45
+La opción predeterminada es "cantidad", pero también puedo elegir "lotes" o "números de serie".
+3:52
+Yo lo dejaré en "Por cantidad". También podemos elegir opciones de facturación.
+3:59
+En "Política de facturación" podemos elegir "Cantidades ordenadas" o "Cantidades entregadas".
+4:05
+Lo dejaremos en "Cantidades ordenadas" para emitir la factura con la orden, no la entrega.
+4:14
+Los campos del lado derecho son financieros y son los mismos sin importar el tipo de producto.
+4:21
+Agregaremos $75.00 como precio de venta.
+4:26
+El IVA que tengas se quedará igual y no veremos la categoría Avatax.
+4:32
+Puedes ver la documentación para más información.
+4:35
+Tampoco veremos los campos de los impuestos porque solo queremos agregar el producto.
+4:43
+En "Categoría" seleccionaré "Todo / Se puede vender / Muebles de oficina"
+4:50
+para agregar este producto al grupo de productos.
+4:53
+Para agregar una referencia específica, como SKU o códigos de barra relacionados A ISRC/UPC
+5:00
+lo hacemos en su respectivo campo.
+5:03
+Si trabajas en un entorno multiempresa
+5:06
+y quieres que el producto sea solo de una empresa, debes seleccionarla en este campo.
+5:12
+Si dejas el campo en blanco, todas las empresas podrán ver el producto.
+5:18
+Para agregar notas internas para los empleados
+5:23
+lo hacemos en este campo de abajo, yo pondré "Mi silla favorita".
+5:33
+En la pestaña "Atributos y variantes" podemos agregar diferentes colores y materiales.
+5:39
+Supongamos que también ofrecemos la silla en rojo, haremos clic en "agregar una línea"
+5:44
+en atributo seleccionamos "color" y en valor ponemos "rojo".
+5:51
+En la pestaña "Ventas" podemos hacer una personalización más granular.
+5:55
+En "Ventas cruzadas y adicionales" podemos agregar productos opcionales, accesorios y alternativos.
+6:02
+En "Productos opcionales" agregaremos productos que recomendaremos durante el proceso de pago.
+6:10
+Esta es una silla, así que podemos agregar el escritorio personalizable
+6:14
+al campo "Opcional" porque hacen buen conjunto.
+6:20
+En "Productos accesorios" agregaremos artículos que realcen el uso de la silla.
+6:26
+Por ejemplo, nuestro "protector de suelo".
+6:31
+En "Productos alternativos" sugerimos productos similares durante la transacción.
+6:39
+Como es una silla agregaré la "silla para conferencias".
+6:45
+En la sección "Comercio electrónico" podemos elegir en qué sitio web aparece
+6:50
+y podemos categorizarlo para que sea más fácil encontrarlo.
+6:54
+Abajo está la opción para seguir vendiendo este artículo aunque esté agotado.
+6:59
+También podemos mostrar cuántas unidades disponibles quedan.
+7:04
+Aquí puedo configurar el mensaje que se mostrará cuando ya no tenga existencias.
+7:10
+En la sección "tienda de comercio electrónico"
+7:14
+podemos agregar etiquetas para más organización.
+7:19
+En este producto agregaré "oficina" y "silla".
+7:23
+Puedes agregar muchas etiquetas.
+7:26
+En "Medios de comercio electrónico" pondremos multimedia adicional que mostrar en la tienda.
+7:34
+Pueden ser imágenes o un video. En la pestaña "Inventario"
+7:41
+Encontraremos varios campos sobre logística de operaciones, como las rutas,
+7:47
+que aparecen si instalamos Compra y Fabricación.
+7:51
+Aquí hay campos sobre el peso, volumen y más, importantes para operaciones de envío.
+8:00
+En este video solo mostraré los campos, pero puedes ver nuestro tutorial de Inventario.
+8:08
+En la pestaña "Contabilidad" definiremos las cuentas de ingresos y gastos.
+8:14
+Así podremos rastrear la información de ingresos y gastos en Contabilidad.
+8:20
+En la parte superior hay botones inteligentes para diferentes métricas del producto.
+8:26
+Esta información se actualiza con el tiempo. También está el botón del sitio web.
+8:32
+Este icono está en rojo porque el producto no está publicado.
+8:36
+Para publicarlo haremos clic en el botón "Ir al sitio web".
+8:45
+Iremos a la página de nuestro producto.
+8:49
+Podemos agregar una descripción y más detalles, pero por ahora lo publicaremos así.
+8:55
+En la parte superior verás que dice "Sin publicar".
+8:59
+Al hacer clic el botón cambiará a "Publicado" y los clientes lo pueden ver y comprar.
+9:07
+Así es como creas un producto en Ventas de Odoo.
+9:12
+No te pierdas los otros tutoriales. Nos vemos en el siguiente video.
+7.4	Create Product Variants | Odoo Sales
+Link: https://www.youtube.com/watch?v=_XMyu9EKnPo
+0:05
+Hola de nuevo, Odooers.
+0:08
+Al comprar, verás que algunos productos tienen diferentes opciones.
+0:11
+Esas son las variantes de producto
+0:14
+y son opciones relacionadas con uno en específico
+0:16
+como diferentes tamaños, colores, marcas, etcétera,
+0:20
+También aumentan las ventas y mantienen contentos a los clientes.
+0:24
+Vayamos a la base de datos para ver lo fácil que es crear
+0:27
+y usar variantes de producto en Ventas.
+0:30
+Todo inicia en el tablero de Ventas.
+0:32
+Aquí seleccionaré "Configuración" y luego "Ajustes".
+0:35
+La función "Variantes" debe estar habilitada.
+0:39
+Ya está activa. Actívala si no lo has hecho.
+0:43
+Recuerda hacer clic en "Guardar" antes de continuar.
+0:48
+Vayamos a la página "Atributos", podemos acceder desde el enlace de abajo
+0:55
+o al hacer clic en "Configuración" y luego "Atributos".
+1:01
+Ambas rutas abren la lista con todas las variantes disponibles en la base de datos,
+1:07
+así como su respectiva información.
+1:10
+Un atributo puede ser el color, tamaño, marca y otras cosas por el estilo,
+1:16
+mientras que los valores son variantes específicas del atributo.
+1:20
+Por ejemplo, el atributo de unos zapatos sería la talla
+1:23
+y los valores serían la talla 10, 11, 12 y otras.
+1:28
+Una variante de producto sería una combinación de un atributo y valor.
+1:33
+Por ejemplo, para un zapato podría ser rojo, talla 12. Tiene sentido, ¿verdad?
+1:38
+También aparece su tipo de visualización,
+1:41
+es decir, cómo lo verán los clientes en el sitio web del comercio electrónico.
+1:46
+También está el modo de creación de las variantes que indica cuándo se generan.
+1:52
+La visibilidad del filtro de comercio electrónico indica si los clientes pueden elegir el atributo.
+1:59
+Aquí haré clic en "Nuevo".
+2:02
+Esto creará un formulario vacío de atributo para personalizarlos de otra forma.
+2:09
+Démosle un nombre a este atributo. Es un material para nuestras chamarras
+2:15
+entonces se llamará "Material".
+2:19
+Luego debemos determinar cómo aparecerá en la tienda en línea.
+2:25
+Con "Opción" aparece un círculo junto a cada una de las que están disponibles,
+2:30
+el tipo "Barra" es más bien un botón,
+2:33
+"Seleccionar" es un menú de opciones para que los clientes elijan,
+2:37
+"Color" solo está disponible para este propósito y el cliente podrá seleccionar uno.
+2:44
+Por último, con "Varias casillas", los clientes pueden elegir más de una opción.
+2:53
+Usaré la visualización predeterminada, es "Opción".
+2:58
+Luego está "Modo de creación de variantes".
+3:00
+"Instantánea" crea todos los campos posibles al agregar el atributo y sus valores.
+3:07
+"Dinámica" las crea en la misma página
+3:10
+solo al agregar los atributos y valores a una orden de ventas.
+3:15
+"Nunca" no crea las variantes en la página.
+3:21
+Toma en cuenta que no podrás cambiar el modo luego de usar el atributo en al menos un producto.
+3:29
+Usaré "Instantánea", la opción más utilizada.
+3:34
+"Visibilidad del filtro de comercio electrónico" permite ver o no los atributos.
+3:41
+Usaré "Visible" para que la gente vea todas las opciones disponibles.
+3:46
+Agregaré algunos valores de atributo en la pestaña de abajo.
+3:50
+Serán los tipos de materiales de la chamarra.
+3:54
+Haré clic en "Agregar una línea" y escribiré "Algodón".
+4:01
+Puedo seleccionar la casilla "Texto libre"
+4:04
+para que los clientes escriban su propio valor. Es más un atributo para personalización.
+4:09
+No la marcaré porque la chamarra ya tiene valores establecidos.
+4:14
+Si algún valor es más costoso y se debe incluir en el precio,
+4:18
+escríbelo en "Precio adicional predeterminado".
+4:22
+Ese valor se agrega al precio original
+4:25
+y esa información aparece en la página del producto para que los clientes lo sepan.
+4:30
+Este es el material básico. No tendrá costo adicional,
+4:35
+pero agregaré otros dos valores. Tejido polar y poliéster.
+4:39
+Haré clic en "Agregar una línea" otra vez y escribiré "Tejido polar".
+4:46
+De nuevo, no seleccionaré "Texto libre".
+4:50
+El precio adicional predeterminado son $10.
+4:56
+Haré clic en "Agregar una línea" para incluir la opción "Poliéster".
+5:04
+El precio adicional predeterminado son $500.
+5:13
+Y eso es todo.
+5:14
+Es posible agregar tantos valores de atributos como queramos.
+5:19
+Ya tengo los atributos y valores listos, los agregaré al producto.
+5:24
+Creé los valores de atributo para la chamarra, así que iré a la página de ese producto
+5:30
+y los agregaré como opciones para los clientes.
+5:33
+Haré clic en "Productos", "Productos" y seleccionaré la chamarra.
+5:40
+Abriré la pestaña "Atributos y variantes".
+5:44
+Haré clic en "Agregar una línea" y luego en el campo vacío que aparece.
+5:49
+"Material" no es una de las primeras opciones,
+5:53
+así que solo escribiré "Material" y lo seleccionaré.
+5:58
+Haré clic en "Valores" y aparecerán las opciones que creé.
+6:06
+Son algodón, tejido polar y poliéster.
+6:08
+Haré clic en ellos para agregarlos.
+6:13
+Después en "Guardar".
+6:16
+Después aparecerá el botón inteligente "Variante" arriba en el formulario.
+6:21
+Haré clic en él.
+6:23
+Este redirige a su página de variantes de producto y aparecerán los tres materiales.
+6:31
+Al hacer clic en Algodón, se abrirá el formulario de esa variante de producto específica
+6:37
+donde se pueden configurar detalles adicionales
+6:39
+como códigos, logística, precios y ajustes de ventas.
+6:43
+En este video cambiaré la foto del producto para que los clientes vean la chamarra de algodón.
+6:49
+Haré clic en el icono de lápiz que aparece en la imagen.
+6:53
+Elegiré el archivo y lo subiré.
+6:58
+Ahí está.
+6:59
+Iré al tejido polar desde aquí con las flechas de arriba a la derecha.
+7:06
+Haré lo mismo, pero subiré la foto del tejido.
+7:14
+Bien.
+7:15
+Veamos cómo se verán las variantes.
+7:19
+Regresaré a la chamarra con las migas de pan y luego haré clic en "Ir al sitio web".
+7:27
+Esto abrirá la página del producto en la tienda en línea.
+7:29
+Ahí aparecerá el producto y sus variantes.
+7:33
+Primero aparece la chamarra de algodón con su respectiva fotografía.
+7:37
+Al elegir "Tejido polar" agrega $10 al precio debido a la opción de material
+7:45
+y Odoo muestra su respectiva imagen.
+7:49
+Pasa lo mismo con la chamarra de poliéster. Genial, ¿verdad?
+7:54
+Así se crean y usan variantes de productos con Ventas de Odoo.
+7:58
+Gracias, nos vemos en el próximo video.
+
+7.5	Quotation Templates | Odoo Sales
+Link: https://www.youtube.com/watch?v=MBrOVjjfdJw
+Introduction
+0:05
+what's up OD doers and welcome back
+0:08
+regardless of Industry when it comes to
+0:09
+business time is money that's why it's
+0:12
+vital for companies to always think of
+0:13
+new ways to be as efficient as possible
+0:15
+with their valuable time that's where
+0:17
+quotation templates come into play
+0:20
+quotation templates allow you to build
+0:21
+preconfigured quotations complete with
+0:23
+already loaded custom details products
+0:25
+settings and more those templates can
+0:28
+then quickly be implemented into a
+0:30
+quotation to help our salespeople sell
+0:32
+more in less time so let's jump into our
+0:35
+database to see how easy it is to create
+0:37
+and use quotation templates using Odo
+Configuration
+0:39
+sales all right since we're talking
+0:41
+about quotation templates today we first
+0:43
+need to make sure we have the proper
+0:45
+settings enabled so first things first
+0:47
+we're going to click on configuration at
+0:49
+the top and then down to settings and
+0:51
+from here we're just going to scroll
+0:52
+down to our quotation and Order section
+0:55
+and here we want to make sure that our
+0:56
+quotation template setting is enabled as
+0:59
+you can see we've already taken care of
+1:00
+that on our end but if you haven't you
+1:02
+should do so now and make sure to click
+1:04
+save before moving on now once that
+1:07
+setting is enabled you can choose from
+1:09
+an existing template in our default
+1:11
+templates field using the drop- down
+1:13
+menu if so desired however today we're
+1:16
+trying to focus on how to create a new
+1:17
+quotation template from scratch so we'll
+1:20
+need to go to the quotation templates
+1:21
+page which is accessible in a couple
+1:23
+different ways we could click on this
+1:25
+quotation templates link directly or we
+1:27
+can go back to configuration and then
+1:29
+click on quotation templates either
+1:31
+route takes us to the same quotation
+Quotation Template page
+1:33
+templates page where we'll find all the
+1:35
+existing templates in our database if we
+1:37
+wanted to modify any of these we'd
+1:39
+simply click on them and then make any
+1:42
+of our desired modifications on the
+1:44
+template form or if we wanted to change
+1:46
+the order of how they appear on the
+1:48
+quotation template drop down menu which
+1:50
+is available on quotation forms we could
+1:52
+drag and drop them using the six block
+1:55
+icon on the
+1:57
+left right now though we're going to
+1:58
+click on new in the upper leth hand
+Quotation Template form
+2:02
+corner and first let's give this
+2:04
+template a proper title in the quotation
+2:06
+template field at the top let's go ahead
+2:08
+and say we have a new promotion starting
+2:10
+this month we'll be selling our
+2:12
+four-person desk with four of our office
+2:14
+chairs we want to save our salese time
+2:16
+by creating a quotation template to use
+2:18
+in order to Quicken this process so for
+2:21
+this title we're going to label this for
+2:25
+person desk combo
+2:30
+next in the quotation validity field
+2:32
+directly below we can determine how many
+2:34
+days we want this template to stay valid
+2:35
+for this field comes in handy when
+2:38
+dealing with limited time promotional
+2:39
+deals on products leaving it set to zero
+2:42
+means that this quotation template is
+2:44
+always valid but since this is a
+2:46
+promotional quotation it's only good for
+2:49
+a month so we're going to set this
+2:50
+validity field set to
+2:53
+30 then we have the confirmation mail
+2:56
+field directly below here we can select
+2:58
+a pre-made email template to be sent to
+3:00
+the customer when they confirm the
+3:02
+quotation which turns it into an
+3:04
+official sales order if we click into
+3:06
+the drop- down menu we'll select our
+3:08
+sales order confirmation which is our
+3:11
+standard confirmation
+3:13
+template beneath that we have our
+3:15
+company field which appears when working
+3:17
+in a multi-company environment select a
+3:19
+company from this
+3:21
+dropdown to only have this quotation
+3:23
+available to that company/ website if
+3:26
+you leave it blank it'll apply to all
+3:28
+websites and companies in your database
+3:30
+for this video though we're just going
+3:31
+to leave this set to stealthy
+3:34
+wood next we have our invoicing Journal
+3:37
+field in this drop- down menu we're just
+3:39
+going to select our customer
+3:41
+invoices next we have the quotation
+3:44
+calculator field the quote calculator
+3:46
+feature in ODU is great for selling
+3:48
+things that require a great deal of
+3:51
+customization for example if we were
+3:52
+selling solar panels This tool can be
+3:54
+used to help the customer fine-tune
+3:56
+their order and see the exact
+3:58
+specifications related to their Pur
+3:59
+purchase a quote calendar is essentially
+4:02
+a spreadsheet with calculated cells for
+4:04
+various product specifications like the
+4:06
+transport assembly cost that salespeople
+4:08
+can fill out with customer preferences
+4:10
+to help get them the detailed estimate
+4:12
+of their purchase but since we're
+4:14
+dealing with simple office furniture we
+4:16
+won't be needing that field so we're
+4:18
+going to leave it blank for
+4:19
+now if you're curious to learn more
+4:22
+about odu's quote calculator be sure to
+4:24
+check out our tutorial and documentation
+4:26
+about it under that field we have a
+4:28
+couple check boxes we have online
+4:30
+signature and online payment if the
+4:32
+online check box or online signature
+4:35
+checkbox is ticked that means we want
+4:37
+our customers to confirm the order with
+4:39
+an online signature and if the online
+4:42
+payment check box is ticked that means
+4:45
+we require a percentage of the total
+4:46
+payment in advance which we can
+4:48
+configure in this adjacent field so
+4:51
+we're going to leave both of those check
+4:52
+boxes ticked but we're going to make the
+4:54
+online payment percentage
+4:57
+50% to allow our customers to confirm
+5:00
+the order by paying half of the price up
+5:02
+front of course they can go ahead and
+5:04
+pay the full amount if they'd like but
+5:05
+this makes the deal a bit more enticing
+5:07
+for them also if this quotation template
+5:11
+was for a subscription product or
+5:13
+service we'd then apply a specific
+5:15
+recurring plan here in the upper right
+5:17
+corner but since this is just a standard
+5:19
+storable product we're going to leave
+5:20
+that field
+5:22
+blank let's then focus our attention at
+5:24
+these bottom tabs here starting with the
+5:27
+lines tab here we'll add our desired
+5:30
+products to the template in this case
+5:31
+it'll be our four-person desk and our
+5:33
+four office chairs so first all we have
+5:36
+to do is Click add a product and we're
+5:38
+going to add our four-person
+5:40
+desk then we'll click add a line
+5:44
+again and change this to our office
+5:50
+chair and we're going to add this a
+5:52
+quantity of
+5:54
+four nice now we're going to jump into
+5:57
+our optional products tab
+6:00
+and let's see what else we can recommend
+6:02
+for our four desk combo customers also
+6:05
+might be interested in adding a cable
+6:08
+management box perhaps so we'll go ahead
+6:10
+and add that
+6:12
+here we should also recommend our
+6:14
+furniture assembly service to just in
+6:16
+case they need help putting everything
+6:18
+together so we'll click add a line and
+6:21
+type in
+6:22
+furniture and select our furniture
+6:24
+assembly
+6:26
+service now jumping into the terms and
+6:28
+conditions tab
+6:30
+we have the opportunity to add any
+6:32
+specific terms and conditions that may
+6:33
+apply to this template and its included
+6:36
+products for this video though we're
+6:37
+just going to quickly paste in our
+6:39
+standard stealthy wood terms and
+6:41
+conditions here but feel free to get as
+6:43
+detailed and as specific as you'd like
+6:45
+to fit your company's needs last tab we
+6:48
+have is the quote Builder tab here ODU
+6:50
+provides us with the ability to upload
+6:52
+and modify unique header and footer
+6:54
+pages to create a truly stunning PDF
+6:56
+quote for your customers there's so much
+6:59
+you can can do with odu's PDF quote
+7:01
+Builder we dedicated an entire video and
+7:03
+documentation to it so be sure to check
+7:05
+those out to learn more once those tabs
+7:08
+and general information fields are
+7:10
+completed with all your desired
+7:11
+configurations you're good to go and
+7:14
+that ladies and gentlemen is how you
+7:15
+create a quotation template in Odo sales
+Use Quotation Templates
+7:19
+now let's see how to use a quotation
+7:20
+template to do that we're going to
+7:22
+navigate to orders at the top and then
+7:24
+select quotations to return to the main
+7:26
+sales dashboard and from here we're just
+7:28
+going to click on new to create a new
+7:31
+quotation now let's say we have a
+7:33
+customer who'd like to take advantage of
+7:35
+our four-person desk combo deal we have
+7:37
+going on this month great we'll add
+7:39
+their name in the customer field which
+7:41
+is Deco
+7:44
+attic now instead of our salesperson
+7:47
+spending their valuable time adding each
+7:48
+element to this quotation one by one
+7:51
+they simply have to click on the
+7:52
+quotation template field and just select
+7:54
+our four person desk combo product
+7:58
+template when when they do the order
+8:00
+lines are automatically populated with
+8:03
+our four person desk as well as our four
+8:06
+office chairs and beneath that you'll
+8:08
+find our added terms and conditions
+8:11
+perfect back on the top of the form we
+8:14
+have our expiration date which is
+8:15
+already added you'll see the data set to
+8:18
+30 days from now just like we configured
+8:20
+on the template form and if we select
+8:23
+our optional products tab we'll see our
+8:25
+two suggested products waiting for us
+8:28
+awesome all right since everything is
+8:31
+looking good we could just click Send by
+8:33
+email so the customer can validate and
+8:35
+confirm their order however let's go
+8:37
+ahead and click
+8:39
+preview so we can see how everything
+8:41
+will look when the customer logs into
+8:43
+their customer portal to view the
+8:46
+quotation here we'll see our template
+8:49
+products and if we scroll down we have
+8:51
+our optional products just a click a way
+8:54
+as
+8:55
+well and from here we can just quickly
+8:57
+add furniture assembly to our order if
+8:59
+we'd like pretty cool right now let's
+9:02
+say they're ready to confirm the order
+9:04
+to do that all they have to do is Click
+9:06
+sign and
+9:07
+pay and if you recall we require an
+9:10
+online signature and an online payment
+9:12
+confirmation so they'd submit a
+9:14
+signature and then simply click accept
+9:16
+and
+9:21
+sign then ODU presents them with an
+9:24
+additional validate order popup
+9:26
+requesting the customer to pay at least
+9:27
+half of the total amount to go confirm
+9:29
+the quotation then all they'd have to do
+9:32
+is click on pay to confirm the quotation
+9:34
+which turns it into a sales order thus
+9:36
+the sale is complete man those quotation
+9:39
+templates sure made that entire process
+Conclusion
+9:41
+a breeze and there you have it o doers
+9:44
+you learned how easy it is to create and
+9:46
+use quotation templates in Odo sales
+9:48
+told you is super simple thanks for
+9:50
+watching and stay tuned for even more
+9:52
+sales tutorials and I'll see you in the
+9:54
+next video
+
+7.6	PDF Quote Builder | Odoo Sales
+Link: https://www.youtube.com/watch?v=SIvlo2JFU_U
+Intro
+0:05
+hello doers my name is Jose Osio today
+0:08
+we're going to be talking about standard
+0:09
+quotations which while they are
+0:11
+informative they kind of lack a certain
+0:13
+personality that most companies such as
+0:15
+stealthy wood work hard to obtain and
+0:18
+it's that personality style and
+0:20
+attention to detail that often sets us
+0:21
+apart from the rest of the pack nowadays
+0:24
+customers expect everything about the
+0:25
+shopping experience to be customized
+0:27
+specifically for them while also being
+0:29
+VIs ually appealing and that's where
+0:31
+odu's PDF quote Builder comes into play
+0:34
+with odu's PDF quote Builder companies
+0:36
+can create stunning quotations that are
+0:38
+customized for each customer specific
+0:39
+Order each quotation includes the
+0:41
+standard order line section like we're
+0:43
+supposed to be seeing and we're also
+0:45
+used to that after all it's literally
+0:48
+the most important thing so don't forget
+0:50
+that however depending on what's added
+0:52
+to the quote the PDF can also include
+0:55
+other relevant and customizable sections
+0:57
+like unique product specifications about
+1:00
+us Cross or upso product offerings and
+1:03
+more like all dressed up pretty nicely
+1:07
+so enough chat let's jump into our
+1:08
+database to see how all of this
+Configuration
+1:10
+works so starting off on our sales app
+1:13
+dashboard let's go to configuration and
+1:15
+settings I want you to scroll down over
+1:17
+here until you reach the quotations and
+1:19
+orders section and I want you to enable
+1:22
+the PDF quote Builder by selecting that
+1:24
+little check box right there after you
+1:26
+do that make sure you hit save in the
+1:27
+top left and let's get to it so with
+1:30
+this locked in we're going to actually
+1:32
+want to take a look at the headers and
+Headers/Footers page
+1:33
+Footers page which we could access by
+1:35
+clicking this link that we have right
+1:37
+there but we're going to go ahead and
+1:39
+assume that you want another way so
+1:41
+let's go up to configuration and then
+1:43
+you might have guessed it we're going to
+1:44
+go to headers and Footers okay so here
+1:47
+you're going to find all the dynamic PDF
+1:49
+components that have been created and
+1:51
+uploaded to the database as you can see
+1:53
+we already have a few three to be exact
+1:55
+but we still need to get a quality
+1:57
+header updated and uploaded over here to
+2:00
+ODU which is exactly what we're going to
+2:02
+do today so the process goes like this
+2:05
+you're going to create a custom PDF with
+2:07
+all the information and images you want
+2:09
+to share with your customers with the
+2:10
+help of a thirdparty PDF Builder like
+2:13
+Adobe today I'm going to be using a free
+2:16
+free open-source PDF Builder known as
+2:20
+scribus scribus depending on how you
+2:22
+want to say that okay so once the PDF is
+2:25
+created with the dynamic attributes
+2:27
+embedded and of course complete with all
+2:29
+of those IC catching elements that
+2:30
+capture the client's attention don't
+2:32
+forget those you can upload it to the
+2:34
+back end of the sales application on
+2:36
+this page actually specifically with
+2:37
+this upload button right there so the
+2:40
+header section is the first thing that
+2:42
+the customer Sees at the top of the
+2:44
+larger compil PDF document so we want to
+2:47
+include all the information that's
+2:48
+relevant to their specific order and
+2:50
+present it nicely you can do this in two
+2:53
+parts by using Dynamic attributes in the
+2:55
+PDF program that update the text
+2:57
+automatically based on the information
+2:59
+OD gives it and then for the second part
+3:03
+by using a design program like Adobe
+3:06
+canva Ms paint I don't know to
+3:09
+incorporate any images or stylings we'd
+3:11
+like to include to uplift the overall
+3:14
+presentation so for that we actually
+Dynamic Fields
+3:16
+need to go ahead and hop on over to our
+3:18
+application so I'll see you there so
+3:21
+here we're inside of the software and
+3:23
+right away you're going to notice that
+3:25
+there are some boxes that we have all
+3:27
+over the place
+3:29
+so here we are inside of our PDF and
+3:31
+you're going to notice right away there
+3:33
+are some boxes everywhere all over the
+3:35
+place those boxes represent our Dynamic
+3:37
+text Fields let's say I want to add a
+3:39
+validity date field to our PDF quote no
+3:43
+problemo for that I'm going to click on
+3:45
+the PDF text field icon which happens to
+3:47
+be this little newspaper one that looks
+3:49
+like it's right next to this dot we're
+3:51
+going to click somewhere on the page and
+3:53
+immediately you'll notice we have this
+3:54
+nice little red box that's opened up so
+3:58
+we're going to drag it around to decide
+3:59
+the size that we want and once that it's
+4:01
+perfect and done we're going to now
+4:03
+double click it once we do that we have
+4:05
+this popup box that's giv us a lot of
+4:07
+other information very first thing where
+4:10
+I can do right now is customize the
+4:12
+dynamic text name in our case this one
+4:15
+we're going to change it to I'm going to
+4:17
+pick validity date and you're going to
+4:20
+see why in a second make sure that I
+4:22
+type that proper okay and while I'm here
+4:25
+and while you're here there's a lot of
+4:27
+other things that you can customize
+4:28
+inside of this pop up let's just keep
+4:30
+our focus on the important elements for
+4:32
+this video so I'm going to select okay
+4:34
+so that we can move on great now just so
+4:36
+you know we do it in lowercase with
+4:39
+underscore so it mirrors the technical
+4:41
+name value inside of ODU if you're
+4:43
+actually curious what a technical name
+4:45
+for specific field is inside of ODU
+4:47
+there's a super easy way to find out so
+Corresponding field names in PDFs and Odoo Sales Quotes
+4:50
+once you're inside of ODU you must be in
+4:52
+developer mode then once that you are in
+4:55
+developer mode you navigate to orders
+4:58
+quotations and in our case select a
+5:00
+sales order so while in developer mode
+5:03
+all you have to do is hover the cursor
+5:05
+over the question mark beside your
+5:07
+desired field and in the popup over that
+5:11
+appears the technical name can be found
+5:13
+in the second row titled field in this
+5:17
+case you can see that the technical name
+5:18
+for the expiration field is validity
+5:21
+date and that's pretty cool right okay
+5:24
+so now back over here back on our PDF
+5:27
+header inside of progress that we're
+5:29
+making
+5:30
+let's just say that we've successfully
+5:31
+configured all the necessary PDF text
+5:34
+fields that we wanted and we're ready
+5:35
+for the next step well awesome now we
+5:38
+need to make sure that the mapping
+5:39
+between the text field and the dynamic
+5:41
+field are set up correctly in ODU so
+5:43
+first we're actually going to go up to
+5:46
+file and then what you want to do from
+5:48
+here is Select export and then that
+5:51
+brings us to a new menu now inside of
+5:53
+here you want to select save as PDF and
+Exporting and uploading PDFs
+5:57
+I need you to ignore the errors for now
+5:59
+I know and in this case ignore the
+6:01
+errors and now once that we're finally
+6:03
+done select save
+6:06
+great now we can head back over to ODU
+6:10
+so I'll see you there so here we are
+6:12
+back inside of our ODU database and I
+6:14
+happen to be in the configurations and
+6:16
+header Sloter section so once uploaded
+6:20
+by selecting upload over here to our
+6:22
+header PDF it's going to appear
+6:24
+immediately over here in the same list
+6:26
+so we're actually going to open it by
+6:27
+selecting it once and we're to select
+6:30
+the configure Dynamic Fields option
+6:32
+right there now the form field name
+Configuring dynamic fields
+6:34
+column over here represents the PDF text
+6:36
+field that we added to the document with
+6:38
+our PDF Builder the path field over here
+6:41
+represents the technical name for the
+6:42
+desired field inside of ODU and looking
+6:44
+at our latest validity date one that we
+6:46
+have well it matches the correct path in
+6:49
+ODU meaning ODU is able to automatically
+6:51
+recognize it and form its own path
+6:53
+without any manual intervention saves us
+6:55
+a lot of time you're also going to
+6:57
+notice there's a funny one we have
+6:58
+partner I ID name over here but we have
+7:01
+partner id. name over here with a period
+7:05
+and that's because in the PDF Builder
+7:06
+that we used it didn't allow the use of
+7:08
+periods in the field name but if you get
+7:10
+close enough and you compensate with
+7:11
+underscores that we have over here ODU
+7:14
+is able to offer the closest suggestion
+7:16
+which in this case is perfect and if we
+7:19
+jump back to our PDF form using the
+7:21
+breadcrumbs which today is pretzels it's
+7:23
+the bread we're going to come over here
+7:25
+to this page where there's a lot of
+7:26
+useful fields of information we can see
+7:29
+the doc document type appear here is
+Individual header page
+7:30
+displayed along with our file name and
+7:33
+we can even add this to quotation
+7:35
+templates if we'd like right below that
+7:37
+that way whenever we use those
+7:38
+configured templates inside of a
+7:40
+quotation we're going to have this PDF
+7:42
+option available on the quotation form
+7:44
+so let's select the very first one that
+7:47
+we have right there you can also
+7:49
+designate this and I'm sure you can see
+7:51
+to be to a specific company if you're
+7:53
+working in a multi-company environment
+7:55
+this might be something that you like if
+7:56
+you leave it blank it's going to apply
+7:58
+to all companies in the data base we can
+8:00
+also see immediately we have our form
+8:02
+Fields included here which if you recall
+8:05
+were in the list of dynamic fields we
+8:07
+just saw a moment ago along with the
+8:09
+History Section as well you know when
+8:12
+who created this when but once we're
+8:15
+done with looking at all of this I'm
+8:16
+going to save this manually all right
+8:18
+everything looked good let's see this
+8:20
+sucker in action so to do that we're
+8:22
+going to go to orders quotations select
+Customized quotes in sales orders
+8:26
+new and let's get started I'm going to
+8:29
+bother Abigail I'm feeling like the
+8:31
+letter A today we're going to select our
+8:34
+office furniture as the quotation
+8:36
+template because I just talked about
+8:38
+that one as
+8:39
+well okay there we go now this got
+8:42
+started right there okay next let's jump
+8:45
+into the quote Builder tab here that we
+8:47
+have let me go right there okay look at
+Quote Builder tab
+8:51
+that here you're going to find all the
+8:52
+PDF headers and Footers we've created we
+8:55
+can decide which of them to include in
+8:56
+this specific PDF quote so let's click
+8:58
+on our new created header and then we're
+9:02
+going to select our about us as well
+9:04
+because Abigail is a new customer who
+9:06
+might be curious about our company then
+9:08
+we're going to go with in our case
+9:10
+testimonials and we're going to bypass
+9:12
+the terms and conditions because no one
+9:13
+reads them all right perfect then with
+9:16
+all our selections and configurations
+9:18
+complete it's time to send this
+9:19
+quotation to the customer for their
+9:21
+review and approval so we're going to
+9:22
+select send by email going to let that
+9:26
+cook for a second because it's making a
+9:28
+beautiful PD PF slail for us and while
+9:31
+that flies over to Abigail's inbox once
+9:34
+that we hit
+9:35
+send we can actually take a look at the
+9:37
+PDF quote just to see that just by
+9:39
+taking a quick peek and what do you co
+9:42
+doers in there everything we've been
+9:45
+cooking this whole time there is our
+9:47
+validity date as well right where we
+9:49
+wanted it to along with the custom sales
+View PDF Quote
+9:51
+order number the customer's name oh my
+9:54
+God we have everything and so much more
+9:57
+and there's a lot of cool things but oh
+10:00
+we even have our quotation right there
+10:01
+of course it's there and there you have
+10:03
+it oders you just saw how easy it is to
+10:05
+create and customize and use odu's PDF
+10:07
+quot Builder please stay tuned for more
+OUTRO
+10:09
+ODU sales tutorials coming your way you
+10:12
+I'm sure you can't wait to see what I'm
+10:13
+cooking grab a
+10:15
+snack zaps Chips please sponsor me
+
+7.7	Product Documents | Odoo Sales
+Link: https://www.youtube.com/watch?v=dhlNDmD3l-o&t=2s
+Introduction
+0:04
+welcome back o doers my name is Jose
+0:06
+Osio today we're going to learn how to
+0:08
+use product documents to enhance the
+0:10
+shopping experience for all of our
+0:11
+customers with ODU sales you can upload
+0:14
+customized informative documents and
+0:16
+attach them to your products and decide
+0:18
+how and when customers can see them
+0:20
+these documents can be eye-catching ways
+0:22
+to inform curious customers about every
+0:24
+detail related to a product to ensure
+0:26
+they know exactly what they're getting
+0:28
+into before making a purchase not only
+0:30
+is this a great way to establish trust
+0:32
+with your clients but it's a visually
+0:34
+stunning educative way to set yourself
+0:36
+apart from your competitor so enough
+0:39
+chiad let's hop right into our database
+0:41
+and see what this is all about all
+Product Documents
+0:43
+righty so let's kick things off on our
+0:44
+sales dashboard so from here let's
+0:46
+select new in the top leftand Corner
+0:48
+over here because we're going to create
+0:49
+a new quotation for a customer who
+0:51
+happen to just express interest in our
+0:53
+acoustic block screens so we're going to
+0:55
+add Anita Oliver to our customer we're
+0:57
+going to make our way to the product
+0:59
+lines over here and what did I just say
+1:01
+we're adding our acoustic block screens
+1:03
+but they're actually extra special in
+1:06
+fact they're fairly unique enough that I
+1:07
+want to ensure that our customers are
+1:09
+aware of all of the available options
+1:11
+and specifications they can choose from
+1:13
+that's why we're going to add a PDF
+1:15
+document to this product so that our
+1:16
+customers can view an organized
+1:17
+collection of every detail related to
+1:19
+this specific item so how do we do that
+1:21
+well we'll need to jump over to the
+1:23
+product form by selecting our internal
+1:25
+link Arrow right here when we selected
+1:27
+the words acoustic block screens now
+Documents smart button/Documents page
+1:29
+here we're in the product form and we're
+1:31
+going to select documents in the top
+1:33
+middle and now we're taken to the
+1:34
+documents page for this specific product
+1:36
+where we're going to find all of the
+1:38
+necessary documents and anything that
+1:40
+we've uploaded for it and as you can see
+1:42
+right now I have not uploaded anything
+1:44
+for it so let's actually change that so
+New Product Document
+1:47
+if somebody was to upload something
+1:48
+we're going to select new for our
+1:50
+example we'll be taken to a blank
+1:51
+product document form here we can
+1:53
+configure a handful of fields in
+1:55
+addition to uploading a custom PDF
+1:57
+detailing the desired specifications of
+1:59
+our product so we'd first have to choose
+2:01
+a type and remember if you're ever
+2:03
+confused by anything here you can also
+2:04
+hover these little question marks now we
+2:07
+have the options to select a file or a
+2:10
+URL now if we selected a file we'd
+2:13
+upload a document and if we select a URL
+2:15
+we enter the URL of a pre-existing
+2:17
+product document whichever type is
+2:19
+chosen we'd also have the option to
+2:21
+configure Dynamic fields for which we
+2:23
+covered this in our PDF quote Builder
+2:26
+tutorial so be sure to check that out to
+2:28
+learn more cuz I'm not going to check
+2:30
+that out right now so up next we decide
+2:32
+where this document would be visible to
+2:34
+the customer where we have this sales
+2:36
+option I'm going to start with this we
+2:38
+could keep it hidden or we could have it
+2:40
+appear on quote on confirmed order and
+2:43
+inside quote
+2:45
+PDF and lastly we have another option we
+2:47
+have this little check box down here and
+2:50
+this is for Ecommerce and it says
+2:51
+publish on website so ticking the box
+2:53
+would provide customers with a clickable
+2:55
+PDF link to the product document for
+2:57
+them to view directly from the online
+2:58
+store provide Ving them with all of the
+3:01
+information they need before they buy
+3:03
+something that way they can't blame you
+3:05
+but let's actually discard this using
+3:07
+the X to return over to our documents
+3:09
+page before us what if I told you that
+3:12
+there's an even quicker way to upload a
+3:13
+document well actually all we have to do
+Upload Product Document
+3:16
+is select the word upload over there
+3:18
+I've already created a specific document
+3:20
+for our acoustic block screens in a
+3:21
+separate PDF Builder so I'm ready to
+3:24
+upload it so as you just saw we select
+3:26
+it now and look at that ODU instantly
+3:28
+creates a cand card for the document and
+3:30
+I could choose its visibility and
+3:32
+whether I'd like to publish it on the
+3:33
+website or not which we're going to see
+3:36
+and talk about in a moment so for this
+3:38
+sample I'm going to select inside quote
+3:40
+PDF using the drop down right there if
+3:42
+you can't see it on my screen you're
+3:44
+going to see it on yours when you do it
+3:45
+it happens to be OS specific then we're
+3:47
+also going to toggle publish on website
+3:49
+so now let's jump back to the quotation
+3:51
+we created in the beginning via the
+3:53
+breadcrumb link so we're going to select
+3:54
+new right there and there we are so from
+3:57
+here let's open up the quote Builder tab
+3:59
+and we're going to find our product
+4:01
+specific documents waiting for us right
+4:02
+here so along with the header and the
+4:06
+about us PDFs let's also select our
+4:08
+acoustic block screens one we're going
+4:10
+to add that all to our quote then we're
+4:11
+going to Simply select send by email and
+4:15
+while ODU prepares this I wanted to talk
+4:17
+to you about today's sponsor it's me
+4:19
+Jose Osio all right we're ready so we
+4:22
+just saw how everything was built we
+4:24
+just saw it in the PDF quote Builders
+4:25
+video before as well a copy that message
+4:29
+and also so a PDF will appear in the
+4:31
+chatter once that we select send so
+4:33
+check this out now give this a little
+4:35
+second today and look at that both
+4:38
+copies are right there and when we click
+4:40
+on that PDF to preview it right there
+4:42
+you're going to see that header that we
+4:44
+saw previously followed by our newly
+4:47
+added product form and look at that the
+4:50
+acoustic block screens are right there
+4:52
+ah and Isn't that cool but let's get out
+Product Documents on Website
+4:54
+of there okay back on the quotation
+4:56
+we're going to click back right now to
+4:58
+go over to the order lines Tab and we're
+5:00
+going to return to the product page for
+5:02
+acoustic block screens via the internal
+5:04
+link just I need to check one last thing
+5:07
+so remember how we chose to publish this
+5:09
+document on the website via the toggle
+5:10
+switch well if we happen to select the
+5:12
+green goto website option over here
+5:14
+we're going to see its product forms and
+5:16
+what do you see right there I noticed a
+5:18
+link that allows me to download the
+5:20
+product document right there so when
+5:22
+clicked Odo automatically downloads the
+5:24
+PDF for our Shoppers so that they can
+5:26
+take their time to review every option
+5:28
+in detail before they make it decision
+5:30
+helping them make the best and honestly
+5:32
+the most informative shopping experience
+5:35
+possible that's not too shabby right and
+5:37
+there you have it OD doers you just
+Conclusion
+5:38
+learned how to create configure upload
+5:40
+and utilize product documents with the
+5:42
+ODU sales application sorry about that
+5:46
+small o dupsy I just realized we're at
+5:47
+the end so remember that's all for this
+5:50
+video but stay tuned for more sales
+5:51
+related awesomeness see you soon party
+5:53
+people remember go grab a snack bananas
+5:55
+today I'm healthier
+
+7.8	Online Quotations | Odoo Sales
+Link: https://www.youtube.com/watch?v=SNsRDT9qB34&t=1s
+0:04
+Hola Odooers, soy José Ignacio y no es por nada,
+0:13
+El negocio de Stealthy Wood va increíble, vendemos muchísimos productos todos los días
+0:19
+por lo que hay que gestionar cotizaciones, órdenes de venta y facturas todo el tiempo.
+0:24
+Si tuviéramos que hacer esas tareas de forma manual sería muy molesto,
+0:30
+frustrante y perderíamos mucho tiempo.
+0:34
+Por eso usamos las cotizaciones en línea de Odoo para
+0:39
+crear, enviar y confirmar cotizaciones antes de enviar una factura.
+0:43
+Con estas cotizaciones también podremos sugerir productos adicionales.
+0:48
+¿Cómo funciona? Imagina que le vendemos un escritorio a un cliente.
+0:55
+Podré sugerir que compren una silla o una lámpara que haga juego con su escritorio nuevo.
+1:03
+Estos productos aparecerán en la cotización en línea.
+1:07
+El cliente solo tendrá que hacer clic para agregar y pagar por todos los productos.
+1:14
+Ni si quiera tengo que hablar del o al cliente para hacer ventas adicionales.
+1:22
+Los productos opcionales aumentan los ingresos y la visibilidad de otros artículos.
+1:29
+También podemos usar plantillas prediseñadas que ya vienen con productos opcionales.
+1:37
+Facilitaremos el trabajo del equipo de ventas.
+1:42
+Veamos cómo funcionan las cotizaciones en línea dentro de Odoo.
+1:48
+Primero iremos a Ventas, configuración, ajustes y llegaremos a los ajustes de Ventas.
+1:55
+Iremos a "Cotizaciones y órdenes" para activar unas opciones.
+2:02
+Antes que nada, tenemos que asegurarnos de activar estas opciones.
+2:07
+Marcaremos firma en línea, pago en línea, plantillas de cotización y creador de cotizaciones.
+2:13
+Asegúrate de activar estas opciones y guardar tus cambios antes de avanzar.
+2:20
+Toma en cuenta que tendrás que instalar la aplicación Sitio Web
+2:26
+para poder usar la función Creador de cotizaciones.
+2:30
+Si no la tienes instalada, Odoo lo hará en automático cuando actives esta opción.
+2:38
+Ahora crearemos una plantilla de cotización desde cero.
+2:43
+Podríamos ir a "Configuración", "Plantillas de cotización", o como consejo,
+2:50
+puedes solo hacer clic en "plantillas de cotización".
+2:54
+Llegarás a la misma página con ambos métodos y esta página ya tiene algunas plantillas.
+3:02
+Para crear una haremos clic en "Nuevo" y tendremos varias opciones.
+3:07
+Primero le pondremos un nombre, este será "mesa para sala de conferencias".
+3:13
+Podemos seleccionar cuántos días después vencerá la cotización.
+3:21
+Este campo puede servir para ventas de temporada, como el Buen Fin.
+3:26
+Para este ejemplo lo dejaré en 0.
+3:30
+En "Confirmación en línea" quiero seleccionar ambas casillas, firma y pago.
+3:38
+Así los clientes podrán firmar la cotización y pagarla en línea.
+3:45
+También está el correo electrónico de confirmación donde podemos designar
+3:53
+una plantilla de confirmación que enviar, si se deja en blanco no se enviará.
+4:00
+Yo iba a seleccionar una, pero mejor lo dejamos en blanco.
+4:06
+Puedo aplicar esta plantilla a una empresa en específico,
+4:11
+en caso de que trabajemos en una base de datos multiempresa.
+4:17
+Si lo dejamos en blanco se aplicará a todas las empresas de la base de datos.
+4:23
+Yo lo dejaré en blanco para que todas las empresas puedan usar esta cotización.
+4:28
+Ahora veamos las pestañas de aquí abajo, empezando por "líneas".
+4:32
+Haremos clic en "agregar un producto" y agregaremos una mesa.
+4:39
+Mesa grande de juntas.
+4:44
+Incluso podemos adjuntar cosas como la cantidad
+4:48
+o unidades de media, pero nosotros lo dejaremos como está.
+4:56
+Veamos la pestaña "productos opcionales", de lo que hemos estado hablando.
+5:02
+Quiero sugerirles artículos adicionales que podrían necesitar para la mesa.
+5:08
+Aquí es donde configuro esos artículos.
+5:12
+Haremos clic en "agregar una línea"
+5:18
+y en mi caso agregaré una silla de oficina
+5:24
+y una silla de oficina pero en negro, para que sientan que tienen opciones.
+5:31
+Puedes agregar los productos opcionales que quieras, pero no agregues muchos.
+5:37
+No quieres abrumar al cliente y francamente te hará ver desesperado.
+5:43
+Solo por unos cuantos artículos que vayan bien con la compra inicial.
+5:50
+Ya configuramos la plantilla, así que ahora podemos diseñarla.
+5:57
+Podríamos usar la plantilla como está, tendrá un diseño sencillo pero profesional.
+6:04
+¿Pero por qué no personalizar el diseño también?
+6:09
+Primero haremos clic en el botón "Plantilla de diseño".
+6:13
+Llegaremos al creador de plantillas con marcadores de posición azules en el sitio web.
+6:20
+Solo tendremos que arrastrar y soltar los bloques de creación para diseñar la plantilla.
+6:27
+Para empezar haremos clic en "editar".
+6:31
+Ahora solo tendremos que arrastrar bloques para cambiar el diseño.
+6:36
+Tenemos muchas opciones en la barra lateral, pero haremos algo mucho más simple.
+6:43
+Hablaré de lo básico para que te des una idea, no ahondaremos mucho en el tema.
+6:50
+Agregaremos un bloque de portada
+6:53
+donde pondremos "Conoce tu nuevo escritorio".
+6:59
+Pondremos algo llamativo en mayúsculas, como si estuviéramos gritando.
+7:06
+¡¡¡COMPRA!!!
+7:10
+Ahora cambiemos la imagen, podemos buscar una, pero esta se ve genial.
+7:16
+La seleccioné de inmediato y eso es prácticamente todo.
+7:20
+Pudiste ver lo rápido que fue cambiar el texto y agregar mi propia imagen.
+7:26
+Ya que terminemos haremos clic en "guardar".
+7:30
+Que no te de miedo probar varios diseños en la plantilla.
+7:34
+Pudiste ver lo fácil y divertido que fue trabajar con el creador.
+7:38
+No sé si te diste cuenta, pero no necesitamos saber de programación.
+7:43
+Creo que es genial, todos esos 1 y 0 me dan ansiedad.
+7:50
+Es momento de usar la plantilla en una orden de venta.
+7:55
+Regresemos al modo de edición.
+8:01
+Regresaremos al tablero de ventas y haremos clic en "Nuevo".
+8:07
+Primero seleccionaremos un cliente,
+8:10
+Yo seleccionaré Azure Interior.
+8:15
+Ahora nos fijaremos en el campo "plantilla de cotización".
+8:21
+No agregaré productos, haré clic en el campo y agregaré la plantilla que creamos.
+8:28
+Todo se llena de forma automática.
+8:31
+Si vamos a los productos opcionales veremos que también se agregaron.
+8:36
+Todo se ve bien así que haremos clic en "Enviar por correo".
+8:42
+Una vez que cargue todo se verá genial.
+8:48
+Ahora enviaremos nuestra plantilla,
+8:54
+haremos clic en enviar y veremos qué pasa cuando se cierra.
+9:00
+Podemos saber qué verá el cliente con el botón "Cliente vista previa".
+9:07
+Al hacer clic llegaremos a la plantilla que acabamos de crear, que se ve hermosa.
+9:15
+Si nos deslizamos hacia abajo...
+9:21
+Nuestros productos opcionales están listos.
+9:26
+Digamos que el cliente quiere agregar uno de los productos.
+9:31
+Solo deben hacer clic en el icono del carrito y listo, se agregará.
+9:37
+El precio se actualiza al instante.
+9:41
+Incluso pueden cambiar la cantidad si quieren.
+9:46
+Si el cliente está listo para confirmar la orden, solo debe hacer clic en "firmar y pagar".
+9:52
+Pueden usar una versión automatizada de una firma, dibujar la suya o subirla.
+9:58
+Al final solo deben hacer clic en "Aceptar y firmar".
+10:04
+Una vez que hagan eso saldrá otra ventana emergente.
+10:12
+Esta ventana les pedirá seleccionar su método de pago.
+10:17
+Después hacen clic en "pagar" y listo.
+10:22
+Si hacemos clic en "volver al modo de edición" regresaremos a la orden de venta.
+10:28
+Quiero que veas esto que está a la derecha. Hay dos opciones.
+10:34
+El mensaje nos dice que estamos esperando el pago e indica que ya firmaron la cotización.
+10:41
+Tenemos un PDF para ver la confirmación y si hubiéramos configurado otro método de pago
+10:46
+el pago se hubiera procesado de forma automática.
+10:50
+Pero toda la información necesaria está en el chatter.
+10:55
+Listo, Odooers, así de fácil es personalizar y usar cotizaciones en línea
+11:00
+con Ventas de Odoo para ahorrar tiempo y generar muchos ingresos.
+11:05
+Mejorarás y simplificarás la experiencia de tus clientes.
+11:10
+Todos ganan. Tengan un hermoso día, Odooers.
+
+7.9	Invoicing Policies | Odoo Sales
+Link: https://www.youtube.com/watch?v=Nk3Ro_2vqP4&t=1s
+0:05
+Hola Odooers. Hoy hablaremos de algo esencial para las ventas: la facturación.
+0:11
+Las facturas son un registro oficial de una venta.
+0:16
+También nos permiten monitorear pagos y ver que nos paguen a tiempo.
+0:20
+Además de que son importantes para obligaciones financieras y fiscales.
+0:25
+Podemos facturar en diferentes momentos y de diferentes formas,
+0:29
+según qué y cómo estemos vendiendo.
+0:32
+En Stealthy Wood facturamos cuando se confirma la orden, antes de entregar el producto.
+0:39
+En Odoo esto se conoce como "facturación según las cantidades ordenadas".
+0:47
+Otra opción es facturar al cliente hasta que se haya entregado el producto.
+0:52
+Esta política es "facturación según las cantidades entregadas".
+0:57
+Al entregar los productos entregaremos la factura.
+1:01
+Esta política es ideal para empresas que envían
+1:05
+muchos bienes o deben lidiar con diferencias entre las cantidades ordenadas y entregadas.
+1:11
+Por ejemplo, un cliente ordena 50 sillas pero solo tenemos 40.
+1:16
+No queremos ignorar toda la orden, necesitan esas sillas...
+1:23
+¿no crees?
+1:28
+Primero enviaremos las sillas disponibles y el resto de la orden después.
+1:35
+En este caso facturaremos al cliente según los productos que recibieron, no los ordenados.
+1:42
+También podemos facturar según metas que logren los clientes al dar un servicio.
+1:49
+Como un videojuego. Si nuestro trabajador completa un nivel, el cliente le paga.
+1:56
+Este ciclo se sigue hasta completar el proyecto.
+2:00
+Hay proyectos que nos tardaremos mucho en completar.
+2:08
+Por eso tiene sentido pagar a los clientes durante el proyecto, no hasta el final.
+2:14
+Esta facturación es según las horas trabajadas.
+2:17
+Con Odoo podemos crear diferentes facturas para diferentes situaciones.
+2:22
+Vayamos a nuestra base de datos.
+2:27
+Empezaremos en los ajustes de Ventas a los que llegamos con Configuración > Ajustes.
+2:35
+Ahora bajemos a la sección "Facturación".
+2:41
+En el ajuste "Política de facturación"
+2:44
+podemos seleccionar "facturar lo ordenado" o "facturar lo entregado".
+2:52
+Esta será la política de facturación automática para los productos nuevos.
+2:59
+No cambiará la política de facturación de los productos que ya se hayan creado.
+3:06
+Aunque será la política automática, no quiere decir que no la podrás cambiar.
+3:14
+Puedes cambiar la política en el formulario del producto en cualquier momento.
+3:22
+Para este video seleccionaré "facturar lo ordenado".
+3:27
+En el lado derecho verás el ajuste "Factura automática".
+3:34
+Al activar este ajuste podremos hacer algo especial.
+3:40
+Odoo generará una factura de inmediato cuando se confirme un pago en la tienda en línea.
+3:46
+Pero hay que aclarar
+3:49
+que Odoo no enviará la factura al cliente, pues ya se pagó la orden.
+3:54
+Pero la podemos enviar de forma manual si queremos. Es genial tener opciones.
+4:00
+Abajo tenemos un ajuste para anticipos, pero podemos ignorarlo por ahora.
+4:06
+Veremos anticipos en otro video, así que no te lo pierdas.
+4:11
+Ya que hicimos los ajustes, haremos clic en "guardar"
+4:15
+y ya estamos listos para aprender más sobre las políticas de facturación.
+4:21
+Para regresar a la página de productos haz clic en "Productos" y "Productos".
+4:28
+Una vez en productos haremos clic en "nuevo" para crear un producto nuevo.
+4:34
+Necesitamos un título.
+4:37
+Crearemos un producto rápido para concentrarnos en las políticas de facturación.
+4:45
+De título pondré silla de cuero,porque es algo que guardo en mi almacén.
+4:51
+So we're gonna name this, Leather Office Chair, because I'm very clever.
+4:56
+En tipo de producto seleccionaremos "producto almacenable".
+5:03
+Abajo veremos la política de facturación.
+5:08
+Podemos elegir "cantidad ordenada" o "cantidad entregada".
+5:15
+Si prestaste atención te percataste que "cantidad ordenada" ya estaba seleccionada,
+5:23
+Pero también notarás que puedo cambiar la selección porque nada está limitado.
+5:31
+Si selecciono "cantidad entregada" tendré que validar la entrega antes de facturar.
+5:38
+Listo, así configuras políticas de facturación para productos almacenables.
+5:46
+Ahora, ya vimos qué fácil es configurar esto,
+5:53
+¿pero qué hay de los servicios? ¿Qué pasa con otros productos?
+5:58
+No te preocupes, también hablaremos sobre ellos.
+6:04
+¿Creías que se me iba a olvidar?
+6:08
+Es más, justo ahora comenzaremos.
+6:13
+Bien, vamos a borrar algunas cosas para crear un servicio
+6:17
+Cambiaré el nombre al de un servicio.
+6:22
+También cambiaremos el tipo de producto a "servicio" y tendremos más opciones.
+6:30
+En el menú desplegable "política de facturación" tendremos nuevas opciones.
+6:36
+Si seleccionamos la política "precio fijo o de prepago"
+6:41
+funciona como si facturáramos según la cantidad ordenada de un producto almacenable.
+6:46
+También podemos seleccionar "basado en cantidad entregada" y verás que algo más cambia.
+6:52
+Esta política es como facturar según cantidad entregada.
+6:58
+Antes de entregar la factura tenemos que ingresar la cantidad entregada en la orden de venta.
+7:06
+Sé que es confuso, así que déjame enseñarte.
+7:10
+Primero crearé una orden de venta con este producto.
+7:14
+Iremos a "Órdenes", "Cotizaciones", "Nuevo" y seleccionaremos al cliente.
+7:23
+Seleccionaré Azure Interior porque es el único cliente al que quiero.
+7:28
+Seleccionaremos el servicio que acabamos de crear y confirmamos la orden.
+7:35
+Por ahora no tengo una columna de "entregado".
+7:40
+Haré clic en el menú de opciones, selecciono la que quiero y se volverá a cargar.
+7:46
+Ahí siempre encontrarán la opción.
+7:51
+Ahora podemos ingresar la cantidad entregada en esa columna, yo solo pondré 1.
+7:59
+Ya que entregamos una podremos hacer clic en "Crear factura".
+8:06
+Puedes seleccionar la opción de facturación que quieras, yo seleccionaré "factura normal".
+8:12
+Hará clic en "Crear y ver factura".
+8:15
+Ya tenemos una factura para el servicio según la cantidad entregada.
+8:21
+Para regresar al formulario del producto solo haré clic en el producto de la factura.
+8:28
+También podemos facturar según los objetivos.
+8:33
+Básicamente es una versión automatizada de lo que acabamos de ver.
+8:41
+La cantidad entregada se actualiza de forma automática según objetivos en Proyecto.
+8:48
+Como esta opción usa la aplicación Proyecto
+8:51
+necesitarás instalarla y activar la función "objetivos".
+8:58
+No se te olvide activar todo en los ajustes de Proyecto.
+9:06
+Finalmente pero no menos importante, podemos facturar según las hojas de horas.
+9:14
+Esta opción la usamos para facturar a los clientes según las horas que los empleados trabajaron.
+9:20
+Antes de que esta opción aparezca necesitarás algunas cosas.
+9:25
+Tienes que instalar la aplicación Hojas de horas y que activar la función hojas de horas
+9:32
+en los ajustes de Proyecto.
+9:34
+Con esto podrás usar Hojas de horas para ver las horas que tus empleados trabajan.
+9:41
+Consulta los videos sobre Proyecto y Hojas de horas.
+9:45
+Eso es todo, Odooers.
+9:48
+Ahora puedes configurar cualquier política de facturación para cualquier producto.
+9:54
+Mira los otros tutoriales de Ventas para obtener más información sobre Odoo.
+9:59
+Nos vemos, Odooers.
+
+7.10	Pipeline Management for a B2B Equipment Supplier | Odoo Sales
+Link: https://www.youtube.com/watch?v=8V2DXRZH9qo
+Introduction
+0:05
+what is up OD doers and welcome back
+0:08
+today we'll explore how to B2B supplier
+0:10
+of industrial equipment uses odu's many
+0:13
+apps to manage their sales pipeline from
+0:15
+lead acquisition to closing deals along
+0:18
+the way we'll see how websites CRM Sales
+0:21
+inventory and accounting work together
+0:23
+to create a super efficient workflow
+0:25
+this is a quick overview so for more
+0:27
+details check out our in-depth video on
+0:29
+the same subject but for now we'll use
+0:32
+odu's webbsite to generate leads with a
+0:34
+customer form ODU CRM to manage those
+0:37
+leads through the pipeline Odo sales to
+0:39
+turn quotes into sales orders Odo
+0:42
+inventory to keep tabs on all of our
+0:44
+machines and stock levels and Odo
+0:46
+accounting to handle invoicing so let's
+0:49
+mosey over to our database and see how
+0:51
+all this works in action shall we for
+Website app
+0:54
+this use case we're going to look at a
+0:56
+company that specializes in selling
+0:57
+factoring Machinery to other businesses
+1:00
+for companies like this a traditional
+1:02
+e-commerce platform typically isn't a
+1:03
+great fit unlike b2c retailers they
+1:06
+don't offer a direct online checkout
+1:08
+process instead businesses often
+1:11
+showcase their Machinery on a dedicated
+1:13
+product page and then rely on customized
+1:15
+forms for clients to formally send
+1:17
+requests for quotations as seen
+1:20
+here that's just a common way B2B
+1:23
+companies generate leads for their sales
+1:24
+department and ODU makes that entire
+1:27
+process super easy if we click edit here
+1:30
+in the top right corner this opens our
+1:32
+code free website configurator we cover
+1:35
+in other tutorials how to customize a
+1:37
+form like this so on the web page we're
+1:39
+just going to click the submit
+1:42
+button and then Odo will pull up the
+1:45
+customize column for that specific
+1:47
+button and if we scroll down to the form
+1:50
+section we're going to be able to see
+1:53
+that the action is set to create an
+1:55
+opportunity which means that every
+1:57
+submission will automatically generate
+1:59
+an opportunity in our CRM
+2:01
+app we can also assign leads to a
+2:04
+specific sales team or even a specific
+2:07
+sales
+2:08
+person there are numerous ways to
+2:11
+personalize forms like this so be sure
+2:13
+to check out our other tutorials and
+2:15
+documentation to learn more but once
+2:17
+you're done customizing everything make
+2:19
+sure to click save here before moving on
+2:21
+to lock in all of your
+2:25
+adjustments now let's see how buying
+2:27
+Equipment Works from a customer
+2:28
+perspective I'll act like a potential
+2:31
+customer who's interested in buying five
+2:32
+machines for their business with these
+2:35
+other fields we have your name phone
+2:37
+number email as well as your company all
+2:40
+this is pre-filled with my information
+2:43
+but we're going to start off by typing
+2:44
+in the subject line here saying looking
+2:46
+to purchase five
+2:55
+machines and following that in the
+2:57
+question field we're just going to type
+3:00
+how much would this
+3:06
+cost then we'll just click
+3:08
+submit and that's all I need to do as a
+CRM app
+3:12
+customer now we'll navigate to our CRM
+3:17
+app and then at the top of the page
+3:19
+we're just going to click
+3:20
+leads then we'll just scroll to the
+3:22
+bottom find our new
+3:25
+opportunity and now let's say we called
+3:27
+our customer and they're definitely
+3:29
+interested in C cling a deal in fact
+3:31
+they may even want more than five
+3:33
+machines in that case we're going to
+3:35
+sign this opportunity the highest
+3:37
+priority by clicking the third star here
+3:39
+in the priority field and then we're
+3:41
+going to click the convert to
+3:42
+opportunity
+3:43
+button now from this resulting popup
+3:46
+we'll set the conversion action to
+3:47
+convert to opportunity and then we're
+3:50
+going to sign this to our best
+3:51
+salesperson
+3:54
+Jerry and then in the customer area here
+3:57
+we're just going to C create a new
+3:59
+customer
+4:00
+and then I'll click create
+4:05
+opportunity we usually sell our machines
+4:08
+for
+4:09
+$3,000 and since he's looking to
+4:11
+purchase five we're going to update our
+4:12
+expected Revenue to
+Sales app
+4:18
+15,000 now let's click on the new
+4:20
+quotation button on the opportunity form
+4:22
+to put a quick quote together to send to
+4:24
+our
+4:27
+customer and this is using our fully
+4:30
+integrated sales application and from
+4:32
+this point all we have to do is add five
+4:34
+factoring machines to our ordered lines
+4:43
+Tab and thanks to the integration with
+4:45
+the inventory application we can see
+4:48
+that we have enough stock on hand to
+4:50
+fulfill this
+4:51
+order next if we click into the quote
+4:53
+Builder
+4:55
+tab we're going to select the about us
+4:58
+header as well as the fact machine
+5:00
+product documents so our customer can
+5:03
+learn even more about our machine then
+5:05
+we'll just scroll up click Send by
+5:11
+email and here we can edit the email
+5:14
+that will be sent but it looks good to
+5:16
+me so I'm just going to click Send to
+5:17
+shoot this off to our
+5:23
+customer great now if we scroll
+5:28
+down we can see the email and quote that
+5:31
+we sent to our customer and if we click
+5:32
+into the PDF here in the chatter we can
+5:35
+see the entire documents that we
+5:38
+sent and from here we have our product
+5:42
+documentation as well as the quote
+5:44
+itself
+5:47
+perfect so if we go back to the
+5:49
+opportunity via the
+Schedule Activities
+5:52
+breadcrumbs we can move this into the
+5:54
+proposition stage since we know they're
+5:57
+qualified vetted and we just sent them a
+5:59
+quote as a
+6:02
+proposal now we don't want this
+6:04
+important opportunity to fall off our
+6:05
+radar so let's schedule an activity for
+6:07
+our salesperson help them stay attentive
+6:09
+to our customer we're just going to
+6:10
+scroll down and click on the activities
+6:12
+button here and in the activity type
+6:15
+field we're just going to select
+6:17
+follow-up quote and then in the summary
+6:20
+we're going to type in see if they want
+6:24
+to double their order
+6:29
+then we're going to change the due date
+6:33
+here we'll set it due for this coming
+6:37
+Monday and then we're going to assign
+6:39
+this to
+6:41
+Jerry then we're just going to click
+6:46
+schedule now let's say Jerry reached out
+6:49
+to the client and they do want to double
+6:50
+their order sweet amazing job Jerry so
+6:54
+all we're going to do is click done here
+6:55
+on this task and leave a note saying
+6:59
+they
+7:00
+are down to
+7:04
+double
+7:07
+woohoo and then click
+7:10
+done in this case we're just going to go
+7:13
+back to the expected Revenue field and
+7:14
+let's update this to
+7:18
+30 and then we're going to click the
+7:20
+quotation smart button here at the top
+7:23
+and then update this to a quantity of 10
+7:26
+of our Factory machine
+7:30
+now let's say the customer just reached
+7:32
+out to confirm the quote awesome in that
+7:34
+case we're just going to click confirm
+7:36
+which turns this quote into a sales
+7:38
+order and then we also have a delivery
+Inventory app
+7:40
+smart button that appears linking this
+7:43
+order to a task in our inventory to make
+7:45
+sure someone in our warehouse delivers
+7:47
+the items to the customer so we're going
+7:49
+to click the delivery button and since
+7:52
+our warehouse guy told us that he
+7:54
+already delivered the products we're
+7:55
+just going to click
+7:58
+validate then all use the sales order 70
+8:01
+breadcrumb to get back to the sales
+8:03
+order and now we have a delivered column
+8:07
+that confirms that we've delivered 10 of
+8:09
+what he ordered now we can create and
+Invoice app
+8:12
+send an invoice through the integrated
+8:14
+accounting application so all we have to
+8:16
+do is Click create invoice followed by
+8:20
+create
+8:24
+draft now let's say they confirmed the
+8:27
+invoice so we'll just click confirm here
+8:31
+and they're ready to pay so we'll click
+8:33
+pay and then we'll click create
+8:37
+payment doing so brandishes an in
+8:39
+payment Banner here on the right of the
+8:41
+invoice and if we head back to the
+8:43
+opportunity via the breadcrumbs here at
+8:45
+the top we can now click the one button
+8:49
+and then ODU will then congratulate Us
+8:51
+by foreclosing the
+8:52
+deal and there you have it oders you
+Conclusion
+8:55
+just saw how a common B2B company can
+8:57
+use odu's integrated website CRM Sales
+9:00
+inventory and accounting applications to
+9:02
+manage their sales pipeline quickly and
+9:04
+efficiently all with one software pretty
+9:06
+convenient right thanks for watching
+9:09
+hope you learned a lot and I'll see you
+9:10
+in the next video
+9:12
+[Music]
+
+7.11	Promotion Basics & Discounts | Odoo Sales
+Link: https://www.youtube.com/watch?v=RdniKQlnxTQ&t=1s
+0:04
+Hola, Odooers. Si son como yo, les encantan las ofertas.
+0:09
+Encontrar una promoción se siente bien, ¿verdad?
+0:13
+En Stealthy Wood consentimos a nuestros clientes
+0:19
+y les ofrecemos descuentos, cupones y otras promociones.
+0:22
+Las promociones hacen que clientes frecuentes y nuevos compren con nosotros.
+0:30
+Las ofertas de tiempo limitado hacen que compren ahora
+0:36
+antes de que se acabe la oferta.
+0:39
+Las promociones aumentan los ingresos orgánicamente, está comprobado.
+0:43
+Podría hablar de esto todo el día,
+0:47
+pero veamos cómo configurarlas en Ventas desde la base de datos.
+0:54
+En este video hablaré de descuentos
+0:57
+pero hay otros sobre cupones, programas de lealtad y distintos tipos de promociones.
+1:02
+Te invito a que los veas.
+1:04
+Ahora pongamos manos a la obra.
+1:08
+Estoy en el tablero de ventas.
+1:10
+Aquí iré a "Configuración" y "Ajustes".
+1:13
+Una vez que abra iré a la sección "Precios".
+1:18
+La opción "Descuentos, lealtad y tarjetas de regalo" debe estar activada.
+1:23
+Aquí ya tengo la función seleccionada.
+1:27
+Para activarla, solo haz clic en la casilla y luego en "Guardar".
+1:34
+Ahora tienes todo listo para configurar promociones.
+1:40
+Iré a "Productos" y luego a "Descuento y lealtad".
+1:47
+Ya configuré algunas promociones en esta página.
+1:52
+Haré clic en "Nuevo" para crear más.
+1:57
+En el formulario del programa escribiré su nombre.
+2:00
+¿Qué tal un descuento del 15%? Ese será su nombre.
+2:08
+Así podré identificarlo más rápido.
+2:11
+Abajo del nombre del programa está el tipo de programa
+2:16
+y si hago clic en ese campo aparecerán varias opciones.
+2:19
+Puedo elegir un cupón, tarjetas de lealtad, entre otras cosas.
+2:26
+Hablaré de estas opciones. Primero, los cupones.
+2:31
+Esta opción genera códigos de cupón para enviárselos a los clientes.
+2:35
+Después están los cupones para la siguiente orden
+2:38
+y el cliente recibe cupones que podrá usar en su siguiente compra.
+2:44
+Revisa el tutorial sobre los cupones y cómo configurarlos.
+2:53
+Otra de las opciones son las tarjetas de lealtad.
+2:56
+Esta permite configurar un programa de este tipo, hablo de ella en otro video.
+3:02
+Hablemos sobre las promociones.
+3:05
+Una opción general que es útil si el programa no se ajusta a ninguna opción.
+3:13
+También están los códigos de descuento.
+3:16
+Esta opción permite aplicar un código al pagar para obtener un descuento.
+3:23
+Por último está la opción "Compra X y obtén Y".
+3:27
+Esta opción se usa para regalar productos en cualquier tipo de orden.
+3:36
+Por ejemplo, compra tres gabinetes y recibe el cuarto gratis.
+3:39
+En este video elegiré el código de descuento para hablar un poco de esa opción.
+3:45
+El campo "Moneda" se queda igual. Veamos el campo "Validez".
+3:51
+En este campo puedo elegir la fecha en la que termina la promoción.
+3:55
+Esta promoción termina mañana.
+3:59
+Mejor la próxima semana, el 7 de octubre.
+4:07
+Si no quieres que termine deja el campo vacío,
+4:12
+así será válida indefinidamente.
+4:15
+Abajo puedo limitar el uso de esta promoción a un número específico de clientes.
+4:21
+Solo se podrá usar 420 veces.
+4:29
+Solo funcionará con ese número.
+4:34
+Si trabajas en un entorno multiempresa
+4:36
+puedes aplicar la promoción a una empresa en este campo
+4:43
+o dejarlo vacío para usarlo en todas las empresas de la base de datos.
+4:47
+El campo "Disponible en" cuenta con algunas opciones
+4:51
+para elegir si la promoción estará disponible en Ventas, Sitio web o Punto de venta.
+4:57
+Esas aplicaciones deben estar instaladas para que aparezcan como opciones.
+5:04
+La opción Sitio web debe estar seleccionada
+5:09
+para poder usar esta promoción en tu página y en tu tienda.
+5:15
+Lo mejor es dejar esa casilla seleccionada.
+5:21
+Este descuento debe estar disponible en todos nuestros sitios web.
+5:26
+Dejaré esa opción tal y como está.
+5:30
+Ahora te mostraré la pestaña "Reglas y recompensas".
+5:36
+Esta sección permite personalizar las reglas y las recompensas.
+5:40
+Si los clientes usan el código que aparece aquí
+5:48
+recibirán un descuento en su compra.
+5:52
+Podemos agregar un par de cosas más.
+5:55
+Haré clic en las reglas condicionales para agregar una.
+6:02
+Primero cambiaré el código de descuento de esta promoción.
+6:06
+Voy a editar el que ya estaba aquí.
+6:11
+Ahora será "Odoopsie15".
+6:22
+Este queda mejor.
+6:25
+No hay ninguna condición configurada todavía, agregaré una.
+6:29
+¿Qué tal si reciben un descuento del 15% al comprar $100 o más?
+6:34
+En este campo escribiré 100.
+6:40
+Ese importe no incluye impuestos,
+6:45
+es importante que obtengamos ganancias.
+6:48
+En la sección "Entre" podemos elegir productos
+6:52
+o categorías de productos que cuentan para el precio mínimo de compra.
+6:56
+Aplicaré la promoción a todos los productos, así que dejaré los campos vacíos.
+7:01
+Ahora solo haré clic en "Guardar y cerrar".
+7:08
+Ahora haré clic en la recompensa que está en esa sección.
+7:13
+Como tipo de recompensa puedo elegir un descuento, un producto gratis, envío gratuito y más.
+7:23
+Ya hay un descuento, pero te mostraré otras opciones.
+7:28
+En el campo "Recompensa" hay 10% de descuento en productos específicos.
+7:36
+Por ejemplo, un descuento del 10% en las playeras.
+7:42
+Eso aparece en la sección "Productos con descuento".
+7:47
+También puede aplicar en toda la orden o en el producto más barato.
+7:53
+Te mostraré un truco para regalar el artículo más barato de la orden.
+8:01
+Selecciona la opción "Descuento",
+8:04
+después escribe 100% y selecciona "Producto más barato".
+8:11
+Esta es solo una de las muchas formas de personalizar promociones en Odoo.
+8:16
+Para este ejemplo haré algo más rápido,
+8:19
+aplicaré el 15% de descuento en toda la orden.
+8:26
+Solo tuve que hacer eso.
+8:28
+La opción para ingresar un descuento máximo está a la derecha.
+8:32
+Esta lo limita a una cantidad monetaria.
+8:37
+Puedo agregar una descripción personalizada
+8:41
+que el cliente verá cuando haga su compra.
+8:45
+Te recomiendo que describas el descuento, como en esta descripción predeterminada.
+8:51
+Ahora solo haré clic en "Guardar y cerrar".
+8:55
+También voy a guardar manualmente.
+9:00
+Así puedes configurar descuentos con Odoo.
+9:05
+Cuando los clientes usen el código "Odoopsie15"
+9:11
+recibirán 15% de descuento en toda su orden.
+9:14
+Dejará de funcionar después de 420 usos, así que deben usarlo pronto.
+9:21
+Veamos esto en acción.
+9:24
+Estamos en el sitio web de Stealthy Wood.
+9:27
+Compraré este gabinete grande porque su precio termina en 20.
+9:31
+Lo agregaré a la orden e iré al carrito.
+9:34
+En la sección "Código de descuento" escribiré "Odoopsie15".
+9:39
+Así de fácil ahorré 15%.
+9:43
+Gracias al código que configuré recibí un buen descuento.
+9:49
+Así de rápido es configurar descuentos con Ventas de Odoo.
+9:54
+Es muy fácil. Nos vemos luego, Odooers.
+
+7.12	Coupons | Odoo Sales
+Link: https://www.youtube.com/watch?v=b9kA7iBHmmA
+0:04
+welcome back OD doers my name is Jose
+0:06
+ignasio today we're going to focus on
+0:08
+every Shopper's favorite thing coupons
+0:11
+coupons as we all know are a great way
+0:13
+to encourage customers to purchase items
+0:15
+which in turn generates more revenue for
+0:17
+your company with the ODU sales app you
+0:20
+can configure unique coupons for
+0:21
+specific customers items Seasons
+0:24
+honestly you can name it and with each
+0:26
+coupon serving as a polite little nudge
+0:28
+towards the checkout line there's no
+0:30
+reason to not use this classic sales
+0:32
+method so enough chitchat let's jump
+0:34
+into our database to see how easy it is
+0:36
+to create and use custom coupons with
+0:38
+Odo sales so let's kick things off on
+0:41
+our sales dashboard so from here we're
+0:43
+going to jump into configuration and
+0:45
+settings and that's actually because we
+0:46
+need a very important feature enabled
+0:48
+before we really get started here you
+0:50
+want to make sure that promotions
+0:51
+loyalty and gift card is ticked off just
+0:54
+because if you haven't taken care of
+0:55
+that make sure you also save because
+0:57
+we're going to need it so that locked in
+0:59
+it's time for for us to head over to
+1:01
+products and we're going to make our way
+1:03
+over to discounts and loyalty so to
+1:05
+create a coupon we click new just to get
+1:08
+the ball rolling shall we okay let's
+1:10
+start with giving this a name I'm going
+1:12
+to copy and paste a very long name since
+1:14
+we want this coupon to reward my loyal
+1:16
+customers with a 25% discount on all
+1:18
+office furniture orders over
+1:20
+$100 this is why we're going to name it
+1:23
+this so next we need to set the program
+1:25
+type you have the option to go with
+1:27
+promotions Loyalty cards coup coupons
+1:30
+I'm just going through these just so you
+1:31
+know we have discount codes as an option
+1:34
+buy X get y next order options go with
+1:38
+coupons and since our company is
+1:40
+American we're going to keep our
+1:42
+currency set over here to
+1:44
+USD and that happens to be the current
+1:47
+default currency for our company now
+1:50
+inside of our Priceless field right
+1:51
+below that we're going to select our
+1:53
+loyal customers USD list just to ensure
+1:56
+this coupon only for our most loyal
+1:58
+stealthy wood clientele
+2:00
+and since we only want this generous
+2:02
+coupon to be valid for this month and
+2:04
+only this month we're going to click
+2:06
+into the start field over here going to
+2:08
+start it with February we're going to
+2:10
+end it with February there we go now
+2:13
+we're done we don't want customers to
+2:15
+use this coupon more than once so we're
+2:17
+also going to tick limit usage to once
+2:21
+there we go so once created coupons can
+2:24
+be used on our online store via a poest
+2:26
+sales system or just for regular sales
+2:28
+orders as well but I'm I'm going to
+2:30
+leave these alone right now as is
+2:32
+because we don't really want to deal
+2:33
+with any of those other
+2:34
+things so now I'm going to talk to you
+2:37
+about the rules and rewards tab here we
+2:39
+can actually set conditions for how the
+2:41
+coupon is used and change the discount
+2:42
+the coupon offers so to create a coupon
+2:44
+that gives customers 25% off if they
+2:47
+spend over $100 we're going to start
+2:49
+with our conditional rules and select
+2:50
+the add button over here all right in
+2:52
+the popup we're going to make sure that
+2:54
+this coupon applies for orders over $100
+2:57
+by setting our minimum purchase that we
+2:59
+have over here to 100 do not do the
+3:01
+minimum quantity because then they might
+3:03
+need to buy 100 products or however many
+3:06
+so this coupon is for our office
+3:08
+furniture instead of selecting each
+3:11
+product one by one inside of our list
+3:13
+over here I'm actually going to skip it
+3:15
+and go to categories and select
+3:16
+Furniture SL office look at that and
+3:19
+then since that's all we need to take
+3:21
+care of for this coupon we can just
+3:22
+select save and close boom right there
+3:25
+we have it now onto our rewards over
+3:27
+here as you can see there's a default
+3:29
+10% discount but we're giving our
+3:30
+customers even more so let's modify bit
+3:34
+by selecting it okay so first we need to
+3:36
+select our preferred War type we can do
+3:38
+free product we can also do free
+3:41
+shipping but we're going to do the third
+3:43
+option
+3:44
+discounts okay next we're going to type
+3:47
+in our discount percent is as I said 25%
+3:51
+now we have an option to toggle what we
+3:52
+wanted to do we want it to apply to the
+3:54
+entire order cheapest or specific
+3:57
+product for the sake of this demo I'm
+3:59
+going to keep it on order and then we're
+4:01
+going to set our Max discount to
+4:05
+$100 and that's because we want our
+4:08
+customers to not use our coupon to save
+4:10
+more than that amount have to make sure
+4:13
+to protect our business from those
+4:15
+maximum
+4:17
+couponers and then once we're done with
+4:19
+that we can actually just hit save okay
+4:21
+everything looks good there we go our
+4:22
+rules rewards and settings are all ready
+4:24
+to go for this coupon okay so with
+4:26
+everything set manually save then you go
+4:29
+on to select the button that says
+4:30
+generate coupons and would you look at
+4:32
+that we have another option well popup
+4:35
+in this case so in our four field we can
+4:37
+send it to Anonymous customer Anonymous
+4:39
+customer smallo dupsy but we want our
+4:42
+actual loyal customers to enjoy this
+4:45
+deal so we're going to select selected
+4:46
+customers and then once that we did that
+4:49
+you'll notice there's a few more Fields
+4:51
+if we want to get super specific about
+4:52
+who could get this we can actually
+4:53
+select specific people in here you'll
+4:56
+notice our quantity to generate goes up
+4:58
+as we go but that's very efficient let's
+5:00
+go to tags instead select that loyal tag
+5:03
+and would you look at that ODU knows now
+5:05
+to generate 23 of them for all of them
+5:09
+isn't that super useful right there now
+5:11
+we also have a valid until and we're
+5:13
+going to do until the end of the month
+5:15
+because I just said that and then if we
+5:17
+would like to we could put a description
+5:19
+a little something something for
+5:23
+our VIP loyal
+5:27
+customers winky face
+5:30
+very subtle all right now we're going to
+5:32
+generate and send coupons over
+5:34
+here now once that your popup disappears
+5:37
+and the depending on the number of
+5:38
+coupons that has generated could take a
+5:40
+second you'll see that the coupon smart
+5:42
+button has updated from zero to whatever
+5:44
+number that you have in our case it's 23
+5:46
+and when we click that ODU takes us to a
+5:49
+page with all the individual coupon
+5:50
+codes along with their pertinent
+5:51
+information now to the most part part
+5:53
+part how do we use one of these well
+5:55
+let's scroll down here where we have
+5:57
+Mitchell admins as you can tell we have
+5:59
+a code code over here to the far left
+6:01
+Let's Pretend We're good old Mitchell
+6:02
+here so if we go into here and we move
+6:05
+on over to our chatter we'll see a copy
+6:07
+of the code that we have over here with
+6:10
+the pertinent
+6:11
+dates and the conditions that we have
+6:13
+set for it and we want to use it
+6:15
+immediately so first we copy it then we
+6:18
+head out of here we go to our website we
+6:20
+go to our shop and we start shopping
+6:23
+remember it's only office furniture so
+6:26
+we need to find something that's $100 or
+6:27
+more like perfect this corner desk right
+6:31
+sit this is more expensive than that so
+6:34
+let's go and view our card over here
+6:37
+great now that we've made our way over
+6:40
+here we can e see our coupon is waiting
+6:42
+here for us and when we use it oh my
+6:45
+goodness would you look at that it
+6:47
+applies automatically and if it didn't
+6:49
+you can manually enter it right there
+6:52
+and that does it there you have it OD
+6:53
+doers you just learn how to create
+6:55
+configure and send and generate and use
+6:58
+coupons through the Odo sales app that's
+7:00
+all for now thanks for watching I'll see
+7:02
+you in the next video party people today
+7:04
+I hope my people in Buffalo learned that
+7:06
+the best Jose ignasio snack is Flavor
+7:09
+blasted goldfish
+
+7.13	Loyalty Programs | Odoo Sales
+Link: https://www.youtube.com/watch?v=CymB_sD11bI
+INTRO
+0:04
+hey there oo doers my name is Jose
+0:06
+ignasio let's actually get right into it
+0:09
+how do you keep someone loyal with a
+0:11
+discount loyalty program of course we
+0:14
+love our customers here at stealthy wood
+0:16
+and we want them to feel rewarded for
+0:17
+shopping with us in the form of loyalty
+0:20
+points this way they get a little extra
+0:22
+something something every purchase that
+0:24
+they can then cash in on later while we
+0:27
+keep that Revenue stream a flowing ODU
+0:30
+sales app makes everything easy with a
+0:32
+discount in loyalty feature where I can
+0:34
+set up different types of programs that
+0:36
+encourage customers to keep shopping
+0:37
+with us with deals too good to refuse so
+0:41
+enough chitchat let's dive into our
+0:43
+database to see how easy it is to work
+0:44
+with discounts and loyalty programs
+0:46
+using Odo sales so we're getting started
+0:49
+on the sales dashboard where we have a
+0:51
+quick view of all active quotations and
+0:53
+sales orders at stealthy wood so from
+0:56
+here let's select configuration and then
+0:58
+settings over there perfect we've been
+1:00
+here before so we're working on loyalty
+1:02
+programs today so we want to make sure
+Configure Promotions, Loyalty & Gift Card
+1:04
+that the check box happens to be there
+1:06
+over here next to Promotions loyalty and
+1:08
+gift card make sure it's checked off
+1:10
+like you see there then once it is you
+1:12
+hit
+1:13
+save so it's stealthy wood we reward our
+1:16
+amazing return customers with a loyalty
+1:18
+card that lets them accumulate points
+1:20
+from their purchases those points can
+1:22
+then be turned into discounts on future
+1:24
+orders I also think the Loyalty program
+1:27
+itself is a great way to encourage
+1:28
+customers to buy specific products for
+1:31
+special points they get their reward and
+1:34
+then we get to move inventory specific
+1:37
+inventory in fact off of our shelves
+1:39
+it's feeding two birds with one scone
+1:42
+and that is the real saying so to get
+1:44
+started let's head into our products
+1:46
+menu up at the top and then once again
+1:48
+we're going to select discount and
+1:50
+loyalty perfect so from here we're going
+1:53
+to click into the line for stealthy
+1:55
+points I just talked about them so here
+Loyalty Programs
+1:58
+is the program page where we conf figure
+2:00
+everything in the program type field
+2:02
+that we have up at the Top This one is
+2:04
+important we have the set to Loyalty
+2:05
+cards and look Odo also lets us know
+2:09
+what this program type does inside of
+2:10
+the text right below it so when
+2:13
+customers make an order they accumulate
+2:14
+points they can exchange for rewards on
+2:16
+the current order or a future one we
+2:18
+even give you a tldr right there so for
+2:21
+now this is just for our customers in
+2:23
+the United States so we have the
+2:25
+currency set to USD as you could tell if
+2:27
+you'd like to you can also change that
+2:30
+so over here we also have a points unit
+2:32
+field we can choose a custom name for
+2:34
+the points that our customers accumulate
+2:36
+maybe if it was Jose agasio it's brother
+2:38
+points snack points because we want our
+2:40
+customers to be wealthy over here we're
+2:42
+going to call them
+2:44
+stealthy and that's a very good
+2:48
+joke anyways let's focus on the rules
+2:50
+and rewards tab that we have down below
+2:52
+and we got to check out some of these
+2:53
+conditional rules so if I actually click
+2:56
+into conditional rules the rectangle
+Conditional Rules: How to set up loyalty points
+2:58
+itself right there
+3:00
+would you look at that we can see the
+3:02
+conditions that must be met in order for
+3:03
+a customer's purchase to earn loyalty
+3:06
+points so under the conditions section
+3:08
+that we have right here in the top left
+3:10
+we have the minimum quantity set to one
+3:13
+and the minimum purchase amount as well
+3:15
+is set to zero meaning that any purchase
+3:18
+qualifies a customer to earn points with
+3:19
+our loyalty program regardless of how
+3:21
+much they spend for any loyalty program
+3:24
+however the customer must have an
+3:25
+account with us in order to collect
+3:27
+loyalty points this makes it easy to
+3:30
+track who our loyal customers are and
+3:31
+how many points they've earned over time
+3:34
+kind of important so they can either
+3:36
+make an account themselves on our
+3:38
+website or one of our salespeople can
+3:40
+add them as a contact and ODU either way
+3:42
+they're going to need that if they want
+3:43
+to participate in our loyalty program be
+3:46
+sure to keep that in mind should also be
+3:48
+noted that if a customer is logged in
+3:50
+and they happen to make a qualifying
+3:52
+purchase or if a sales person confirms a
+3:54
+sales order for a qualifying purchase in
+3:56
+ODU then ODU automatically adds them to
+3:59
+the loyalty program and tracks their
+4:01
+points that is far too convenient am I
+4:04
+right
+4:07
+now as mentioned earlier there's a great
+4:10
+opportunity here to push some product
+4:12
+and incentivize customers to purchase
+4:13
+them with special points so how do we do
+4:16
+that well first of all we click X we get
+4:18
+out of here we don't delete this and now
+4:21
+we're going to exit this existing
+4:22
+conditional rules box we're going to
+4:24
+open up a new one by selecting add over
+4:26
+here okay perfect so I'm going to keep
+4:29
+everything the same as our standard
+4:31
+conditional rules that I just showed you
+4:32
+earlier
+4:33
+except for the products one we're going
+4:37
+to change that some stuff over here now
+4:39
+if I'm looking around what I need to
+4:41
+move is our acoustic block screens are
+4:43
+super popular we do not have well
+4:47
+actually we don't have many of them in
+4:48
+stock I'm sorry to say that and I'd like
+4:50
+to incentivize my customers to order
+4:52
+more so we're going to click into the
+4:55
+products field and we're going to start
+4:57
+typing in there we go acoustic block
+5:00
+screens we're actually going to add both
+5:02
+variants so once again and go right in
+5:05
+there we got the white one now we got
+5:07
+the other wood one perfect I could also
+5:10
+set specific categories if I would like
+5:13
+to and product tags but for now let's
+5:15
+keep the focus on our acoustic block
+5:17
+screens so over here inside of the point
+5:19
+section we can choose how many points we
+5:21
+are granting and whether these points
+5:23
+are awarded per order per dollar amount
+5:25
+spent or per unit paid over there make
+5:29
+this extra special for my loyal
+5:32
+customers over here I'm going to change
+5:34
+this to
+5:36
+4.2
+5:38
+420 stealthy points right there and
+5:41
+since there's nothing else I need to
+5:42
+configure here we're done so all I have
+5:45
+to do is Select save and close and
+Rewards: How to set up loyalty rewards
+5:47
+beautiful it's added right there
+5:49
+automagically let's move over to our
+5:51
+rewards card over here into this
+5:53
+existing one okay so here we have the
+5:56
+option to give away a free product or a
+5:59
+discount if we would like and that's
+6:01
+also kind of
+6:02
+nice but we're going to keep our set to
+6:05
+discount so you could do that right
+6:07
+there as a toggle by the way hopefully
+6:09
+it didn't disappear there we go just in
+6:11
+case I'm going to reopen it real quick
+6:13
+perfect so we're going to keep it at
+6:15
+discount and set the discount field as
+6:17
+well instead to 10% because I'm feeling
+6:20
+generous we're doubling it up so we also
+6:22
+have the options on whether to apply
+6:23
+this discount to the customer's total
+6:25
+order the cheapest product or specific
+6:29
+products as well which we can click on
+6:31
+and if we do that it allows us to then
+6:33
+select the targeted products for the
+6:35
+discount field as well if we would like
+6:37
+to but for now let's apply this to order
+6:42
+makes it easier anyways and let's make
+6:44
+it so that this discount reward cost my
+6:46
+customers we're going to make this one
+6:48
+cost 100 points
+6:51
+perfect makes it easy so in the
+6:54
+description over here we have as you may
+6:56
+have guessed the description of the
+6:57
+reward on the order which is fully
+6:59
+customizable let's add a special message
+7:01
+to our
+7:02
+customers thanks for being a brother to
+7:07
+us nope little bit too crazy there a
+7:12
+stealthy
+7:13
+wood do you get it I hope you did
+7:18
+anyways we also have the option to add a
+7:19
+Max discount which caps the order amount
+7:22
+so that it doesn't bankrupt us and
+7:25
+that's how much the max that they can
+7:26
+take off and Order and in our case I
+7:28
+don't want anything too crazy so I'm
+7:30
+going to still leave this as 10,000
+7:33
+everything looks good here so let's go
+7:34
+ahead and
+7:36
+save beautiful we're all done right
+7:39
+there but you'll notice up here we have
+7:41
+a smart button it's the Loyalty cards
+Loyalty Cards
+7:44
+which shows us that we already have a
+7:45
+stealthy water using our loyalty program
+7:48
+and if we click that Loyalty cards
+7:49
+button over there we'll see a separate
+7:52
+page that shows customers with the
+7:53
+stealthy wood points cards over here as
+7:55
+well as how many points they have on it
+7:57
+it looks like in our case Deco addict
+8:00
+has an obscene amount of points wow I
+8:04
+did not expect that but I think it's
+8:08
+time for us to see this in action so
+8:10
+let's not be an enabler but I heard that
+8:12
+my customer Deco addict is itching for
+8:14
+some new acoustic block screens to get a
+8:17
+new order going I think it's time for us
+8:18
+to go show this so to get a new order
+Loyalty points in action
+8:21
+going we're going to select orders in
+8:23
+the top left and then quotations and
+8:25
+we're going to select new right there so
+8:28
+inside of our customer field we're going
+8:29
+to select Deco addict and we're going to
+8:31
+start typing while Things fill out so
+8:34
+great now we're going to head down over
+8:35
+to our product lines and select out a
+8:37
+product I happen to know that they want
+8:39
+those acoustic block screens and then we
+8:41
+got this nice kind of cool prompt over
+8:43
+here so we're going to select our wood
+8:46
+ever so amazing block screens and the
+8:48
+quantity is three for these and then
+8:50
+confirm that out perfect we're all done
+8:53
+now once that we have these three
+8:54
+puppies to our order we want to add Deco
+8:56
+addict hard-earned loyalty discount and
+8:59
+to do that that well all we have to do
+9:00
+is Select reward down here in the bottom
+9:02
+right and would you look at that ODU
+9:04
+automatically loads the percentage
+9:05
+discount under a new product line that
+9:08
+was so easy now we just have to select
+9:10
+send by email up in the top left and
+9:13
+once that we got our nice little PRP we
+9:14
+just hit send and boom Deco addict
+9:17
+quotation is ready with their stealthy
+9:19
+points in tow now just was one last
+9:22
+thing actually if we were curious as to
+9:24
+how many points our customer has all we
+9:26
+actually have to do is hover their name
+9:28
+select the interal lnk over here and
+9:30
+then the loyalty card smart button up at
+9:32
+the top and would you look at that here
+9:34
+we go look at that we see all of their
+9:37
+special page with all of their points
+9:39
+and it looks like Deco addict is still
+9:42
+incredibly wealthy and stealthy points
+9:44
+and there you have it oders now you know
+9:46
+how to create and use loyalty programs
+OUTRO
+9:48
+inside of ODU so that you can keep your
+9:50
+customers happy and coming back for more
+9:53
+I'm going to go look up Furniture
+9:55
+interventions to help Deco addict out
+9:58
+but I'm going to catch you in the next
+9:59
+video go grab a snack today is Tim's
+10:02
+potato chips sponsor me
+
+7.14	Gift Card Programs | Odoo Sales
+Link: https://www.youtube.com/watch?v=zjUHM0TSKZ0&t=1s
+0:05
+what's up o doers and welcome back
+0:08
+picture this you just bought a special
+0:10
+item that you've been dreaming about for
+0:11
+weeks it's a good feeling but what makes
+0:14
+that experience even more special
+0:16
+getting a free gift card with your
+0:18
+purchase of course when you provide
+0:20
+incentives like gift cards to your
+0:22
+customers you not only encourage them to
+0:24
+purchase more items to reach the amount
+0:25
+needed for the gift card but you also
+0:28
+give them a more rewarding and meor able
+0:30
+shopping experience that'll have them
+0:32
+coming back to your shop again and again
+0:34
+and more business is always a good thing
+0:36
+right ODU makes it easy to set up gift
+0:39
+cards for your business with our gift
+0:40
+card programs in the sales app we can
+0:43
+generate new gift cards modify them how
+0:45
+we like and have our customers use them
+0:47
+in our online shop let's see how it
+0:50
+works okay to get started we're just
+0:52
+going to head to our sales application
+0:54
+click the configuration header at the
+0:56
+top followed by settings here in the
+0:59
+pricing section we just want to make
+1:01
+sure that our promotions loyalty and
+1:02
+gift card setting is enabled if you
+1:05
+haven't done so in your database make
+1:06
+sure to check that tech box and then
+1:08
+click save before moving
+1:10
+on cool with that set up we're just
+1:12
+going to click the products header
+1:14
+followed by gift cards and ew wallet
+1:17
+here we can see a list of all of our
+1:19
+gift card programs that we have set up
+1:20
+in our database we can also confirm that
+1:23
+this is a gift card by looking at the
+1:25
+program type column in here where is
+1:28
+listed we can see it says gift card
+1:30
+under the items column we can also see
+1:32
+how many of these gift cards have been
+1:34
+generated this one has zero while this
+1:36
+one has 10 and we can also see if this
+1:39
+is associated with any website or POS
+1:42
+system even what company and we'll get
+1:44
+further into that later in the video
+1:47
+here at stealthy wood we're starting up
+1:48
+a promotion to send a $60 gift card to
+1:51
+anyone who purchases our latest Alpine
+1:53
+table design so let's make a brand new
+1:55
+gift card program and to start that
+1:57
+we're just going to click new in the
+1:58
+upper leftand corner
+2:01
+when we do this opens a create a new
+2:03
+program page and we can start by giving
+2:06
+this a name so our employees know what
+2:08
+the gift card's for so I'm just going to
+2:11
+type 60 off with
+2:16
+alpine
+2:19
+table and next we can check the program
+2:22
+type it's already set to gift card so
+2:24
+we're just going to leave it as is and
+2:26
+below that is the gift card products
+2:28
+field this is is where you enter the
+2:30
+gift card products configured elsewhere
+2:32
+in the database these are actual cards
+2:34
+customers purchase that have a
+2:36
+predetermined amount of money on them so
+2:39
+we're just going to leave this to the
+2:40
+default gift card
+2:42
+setting next we have the email template
+2:45
+field here's where we can select a
+2:47
+preconfigured email that'll be sent to
+2:49
+the customer when they receive the gift
+2:50
+card if we want we can change it by
+2:53
+clicking into this drop- down menu and
+2:55
+selecting a different template but we
+2:57
+can also see what this template looks
+2:59
+like by clicking the internal link arrow
+3:02
+to the right of
+3:03
+it and then when we click into that
+3:05
+we'll see a full preview of what the
+3:07
+customers see when they receive their
+3:09
+gift card but we're just going to use
+3:11
+the breadcrumbs to get back
+3:16
+here and next we have our print report
+3:20
+now this field only appears in the point
+3:22
+of sale application if it's installed of
+3:25
+course and the print report is what
+3:27
+would be printed and given to customers
+3:29
+who purchase physical gift card through
+3:31
+one of our kiosks so we're going to set
+3:34
+this to gift
+3:37
+card below that we have the option to
+3:39
+configure things like which currency we
+3:42
+want our gift card in which company this
+3:44
+gift card is associated with as well as
+3:47
+what applications this gift card is
+3:49
+available
+3:51
+on if any of these checkboxes are
+3:54
+selected we have some extra options
+3:56
+where we can choose which point of sale
+3:58
+or which website this is applicable for
+4:01
+but we're just going to leave this to
+4:02
+all websites and all POS
+4:05
+options all right now we've got
+4:07
+everything configured the way we want so
+4:09
+it's time to generate some gift cards to
+4:12
+do that all we have to do is click the
+4:13
+generate gift cards option here at the
+4:15
+upper left hand
+4:17
+corner and now let's see how we can
+4:20
+generate the gift cards first we can
+4:22
+choose between Anonymous customers and
+4:24
+selected customers if we choose selected
+4:27
+customers then we can select specific
+4:28
+customers that ow to will send gift
+4:30
+cards too the quantity to generate field
+4:33
+becomes uncustomized as ODU
+4:35
+automatically Updates this field to
+4:37
+corespond to the selected customers
+4:39
+above on the other hand if we select
+4:41
+Anonymous customers we can decide on the
+4:44
+quantity to generate and the gift card
+4:46
+value and we're going to set the
+4:49
+quantity to generate to 100 and we'll
+4:52
+set the gift card value to
+4:56
+60 and below that we have a valid until
+4:59
+field and this is where we can select
+5:02
+how long these cards are valid for so
+5:05
+we're just going to click into this
+5:06
+field and let's say three
+5:11
+months and finally we have a description
+5:14
+section here and we could set this
+5:18
+to
+5:20
+$60 gift card for
+5:25
+Alpine table purchase
+5:30
+and then after you enter your
+5:31
+description assuming everything looks
+5:32
+good to you all you have to do is Click
+5:35
+generate gift
+5:37
+card and just like that you'll notice
+5:39
+the gift card smart button here at the
+5:41
+top shows 100 cards have been generated
+5:44
+to send these gift cards off manually we
+5:46
+can first click into the smart button
+5:48
+here and then we can see a full list of
+5:51
+all the gift cards that we created as
+5:54
+well as the respective columns that we
+5:56
+previewed
+5:57
+earlier and if we want wanted to send
+6:00
+this to a specific customer all we have
+6:02
+to do is click Send here next to
+6:04
+whatever gift
+6:07
+card and then on this page we can either
+6:10
+customize this further if we'd like or
+6:13
+we can just go ahead and enter the name
+6:15
+or email address of the customer who
+6:16
+bought the Alpine table we're going to
+6:19
+use Deco addict for this example and
+6:21
+then just click
+6:23
+Send and just like that Deco addict has
+6:26
+a sweet deal hitting his inbox just
+6:28
+about now
+6:30
+now you might be asking yourself how
+6:32
+does this look on my customer end great
+6:35
+question let's take a look let's say
+6:38
+we're Deco attic and we're looking to
+6:39
+cash in that sweet gift card we got
+6:41
+earlier now I've been eyeing this office
+6:43
+lamp for some time now and it looks like
+6:45
+our gift card will cover the full amount
+6:47
+so let's click into the office lamp add
+6:50
+it to our cart and then click view
+6:54
+cart below the total area we can see a
+6:57
+field labeled gift card or discount code
+7:01
+here's where we can put in our coupon
+7:02
+code that was sent to our email earlier
+7:05
+I already copied it to my clipboard so
+7:06
+I'm just going to paste it in here and
+7:08
+then click
+7:10
+apply as you can see the coupon code has
+7:13
+been successfully applied and we can
+7:15
+proceed to check out pretty easy right
+7:18
+and that'll do it for today o doers we
+7:20
+saw how to set up gift card programs how
+7:23
+we could send those cards out to our
+7:24
+customers and how those customers can
+7:26
+use their gift cards in our e-commerce
+7:28
+shop thanks for sticking around and I'll
+7:30
+see you in the next video
+
+7.15	Sales Tax: Part 1 | Odoo Sales
+Link: https://www.youtube.com/watch?v=d97m_ns40qU
+
+0:04
+Hola, Odooers. Benjamin Franklin dijo "No hay nada seguro, salvo la muerte y los impuestos".
+0:13
+Hoy hablaré sobre una de esas cosas, la muerte.
+0:19
+Es broma, hablaré sobre impuestos. No son tan malos pero también dan miedo.
+0:25
+En Stealthy Wood nos dedicamos a vender y debemos cumplir con algunas leyes gubernamentales.
+0:33
+Odoo instala una localización de impuestos automáticamente
+0:37
+según el país de nuestra empresa al crear una base de datos.
+0:42
+Los impuestos predeterminados de nuestro país casi siempre están listos para usar.
+0:49
+Además Odoo permite crear y editar impuestos en cualquier momento
+0:53
+y aplicar impuestos automáticamente a las facturas.
+0:57
+Otra cosa a tener en cuenta son las tasas impositivas variables
+1:01
+que son muy importantes al vender productos a clientes en otro país.
+1:06
+Las normas fiscales internacionales también conocidas como posiciones fiscales
+1:12
+están en la localización que Odoo instala al crear una base de datos.
+1:17
+Casi siempre están configuradas y listas para usar.
+1:20
+Pero recuerda que puedes crearlas y editarlas cuando quieras
+1:25
+para que los clientes paguen la tasa impositiva correcta.
+1:30
+Si quieres aprender más revisa los videos y la documentación de contabilidad.
+1:38
+Tienen mucha información útil.
+1:41
+Aquí describiré brevemente los impuestos y cómo se relacionan con las ventas.
+1:46
+Vayamos directo a la base de datos para ver la gestión de impuestos sobre las ventas.
+1:54
+Para aprovechar las funciones para impuestos deberas instalar y activar algunas cosas.
+2:00
+Primero iré a una aplicación con un gran nombre, Aplicaciones.
+2:07
+Al entrar eliminaré el filtro predeterminado
+2:13
+de arriba porque buscaré algunos módulos, no aplicaciones.
+2:17
+Buscaré el término "Impuesto" y aparecerán varios, otros ya están instalados.
+2:26
+Es una buena forma de encontrar módulos para agregarlos a la base de datos de tu empresa.
+2:31
+De esta lista podrías instalar algunos
+2:34
+como AvaTax, AccountTaxCloud y DefineTaxesAsPythonCode.
+2:42
+No te preocupes, hablaré sobre ellos. Ahora saldré de la aplicación.
+2:47
+Las ventas y la contabilidad están relacionadas sobre todo cuando se trata de impuestos
+2:52
+así que iré a Contabilidad desde la paleta de comandos para verificar algunas cosas.
+3:00
+También puedes acceder a los impuestos desde la aplicación Facturación.
+3:07
+Ve a Aplicaciones si no la tienes instalada.
+3:12
+Iré a Configuración y seleccionaré Impuestos para ir a esa página.
+3:20
+Gracias a la localización de Odoo aquí aparecen los impuestos de nuestro país.
+3:28
+En este caso revisaré el impuesto del 15% porque es bastante alto.
+3:34
+Arriba aparece el nombre del impuesto, abajo la función para calcularlo
+3:42
+y al hacer clic allí podré cambiarlo por otra opción disponible.
+3:47
+Grupo de impuestos es el primero y el que revisaré, este agrupa varios impuestos
+3:54
+y al aplicárselo a la factura, se aplican todos los que estén en el grupo.
+4:00
+Puedes agregar los impuestos existentes que quieras a esta lista.
+4:06
+El siguiente en la lista es Fijo.
+4:10
+Es un cálculo de impuesto fijo, siempre es el mismo monto
+4:17
+sin importar el precio de venta del producto. No cambia después de establecerlo.
+4:23
+El siguiente es Porcentaje del precio y es el que más se utiliza.
+4:30
+Para calcular el impuesto, este se multiplica por un porcentaje de ese precio.
+4:37
+El 15% en este caso.
+4:39
+Eso se descontará del precio de venta del producto que se vende.
+4:43
+Suena algo complicado pero deja te lo explico.
+4:47
+Al vender un producto que cuesta $100 y tiene un impuesto del 15%
+4:52
+multiplicaría 100 por .15 para obtener el monto de ese impuesto.
+4:59
+El cliente pagaría $115 como precio total.
+5:05
+También se puede calcular con 100 por 1 más .15.
+5:12
+Son matemáticas básicas ¿verdad, Odooers?
+5:16
+El siguiente tipo de cálculo en el formulario es porcentaje del precio con impuestos.
+5:24
+En este, el monto del impuesto se calcula multiplicando un monto porcentual
+5:31
+por el precio final de un producto incluyendo el impuesto.
+5:35
+Al vender un producto que cuesta $100 y también tiene un impuesto del 15%
+5:41
+multiplicaría el porcentaje del impuesto por el precio total del producto con su importe.
+5:48
+El importe del impuesto es la variable si la convierto en una ecuación.
+5:54
+El resultado para el importe sería de $17 con algunos centavos.
+5:58
+Al sumar el impuesto al precio de venta, el total es
+6:03
+$117.65, Odooers.
+6:09
+Sé que acabo de hacer varias cosas pero no te preocupes.
+6:13
+Hay una forma más fácil de calcular esto sin hacer operaciones complejas.
+6:20
+La forma fácil de calcularlo
+6:24
+es dividir el precio de venta entre 1 menos el porcentaje, es fácil.
+6:31
+Al usar este método de cálculo
+6:34
+el importe es un poco más alto que con el porcentaje regular
+6:40
+aunque usé el mismo impuesto del 15%. Pasaré a lo siguiente.
+6:46
+La última opción disponible es código Python
+6:49
+solo si el módulo DefineTaxesAsPythonCode está instalado.
+6:57
+Esta opción permite calcular el impuesto con código Python personalizado
+7:02
+si las opciones anteriores no son útiles.
+7:05
+En este video hablamos de varias opciones, Odooers. Perdí el aliento y ahora me relajaré un poco.
+7:11
+Dejemos de pensar en impuestos, levantémonos,
+7:15
+vayamos por un snack, tomemos una siesta y luego regresamos.
+7:21
+Nos vemos después.
+
+7.16	Sales Tax: Part 2 | Odoo Sales
+Link: https://www.youtube.com/watch?v=gNuXCNm3kH0
+0:01
+Ya descansamos y comimos algo,
+0:05
+continuemos con el tutorial de impuestos.
+0:08
+Ya hablamos sobre cómo calcularlos con código Python,
+0:11
+pero hay más cosas en esa página.
+0:14
+¿Qué tal si continuamos, Odooers? Nos vemos allí.
+0:19
+Del lado derecho aparece el tipo de impuesto y otras opciones.
+0:24
+Este campo define en qué aplicaciones se aplica y en qué documentos aparece.
+0:31
+En este caso elegiré Ventas para usarlo en esas órdenes.
+0:37
+La opción "Ninguno" es útil en casos específicos,
+0:43
+para incluirlo en un grupo de impuestos
+0:47
+si no quiero que aparezca con los otros impuestos sobre ventas o compras.
+0:52
+Tuve que recordar qué es lo que hace, Odooers. Recuérdenlo también.
+0:56
+Dejaré el campo con "Ventas". No quiero cometer errores.
+1:02
+Abajo está el campo "Ámbito del impuesto".
+1:06
+Al hacer clic en él aparecen otras opciones.
+1:10
+No es obligatorio, pero al elegir un ámbito fiscal
+1:14
+restringirá el impuesto para usarlo solo en bienes o servicios.
+1:20
+Los cambiaré para que veas cómo aparecen
+1:23
+pero no habrá restricciones, el campo estará vacío.
+1:28
+No me gustan las restricciones, continuemos.
+1:31
+El campo "Importe" es para el monto del impuesto.
+1:36
+Ahora mismo es del 15%.
+1:39
+En la parte de abajo del formulario está la pestaña "Definición"
+1:45
+que permite incluir los parámetros para este impuesto.
+1:50
+Esta pestaña tiene algunas opciones y secciones,
+1:53
+como "Distribución para facturas" y "Distribución para reembolsos".
+1:58
+Primero te mostraré la sección de facturas.
+2:02
+Para configurar esta sección debe haber una línea que diga "Base".
+2:09
+Es la línea de la orden de venta o la factura
+2:14
+y las siguientes líneas la usarán de referencia.
+2:19
+Debe haber al menos una línea para el porcentaje, aquí es la segunda.
+2:26
+En la columna "Cuenta" de esa línea elegiré dónde registar el impuesto.
+2:33
+Al especificar una, se registrará un apunte automáticamente en Contabilidad
+2:39
+para todas las ventas que usan este impuesto.
+2:44
+Este se registra al 100% en esta cuenta.
+2:51
+A la derecha está la columna "Tablas de impuestos"
+2:55
+que genera reportes fiscales según las regulaciones de cada país.
+3:02
+Abajo está "Distribución para reembolsos" y funciona igual.
+3:10
+Cuando sepas cómo configurar una, sabrás cómo configurar la otra.
+3:15
+En la pestaña "Opciones avanzadas" hay más opciones para configurar.
+3:21
+Podemos agregar etiquetas a las facturas, que los clientes verán en las exportadas.
+3:28
+Aparecerá el nombre del impuesto si estas no tienen etiquetas.
+3:34
+¿Qué otras opciones hay?
+3:36
+El grupo de impuestos aparece arriba de la línea total en las facturas exportadas.
+3:43
+También están los campos "País" y "Empresa"
+3:47
+si el impuesto solo aplica a una empresa o país específico.
+3:53
+A la derecha puedo elegir si incluir el impuesto en el precio
+3:57
+así el precio de venta del formulario de producto ya lo incluirá.
+4:02
+No seleccionaré esa opción en este momento.
+4:08
+Por último, puedo elegir si el impuesto influye en la base imponible de otros.
+4:13
+Es decir, los impuestos con secuencia más alta se verán afectados por este.
+4:18
+Tampoco seleccionaré esa opción.
+4:20
+Los impuestos ya deberían estar configurados por el paquete de localización de Odoo.
+4:26
+Es probable que no tengas que configurarlos,
+4:31
+pero es bueno que sepas cómo hacerlo.
+4:34
+Te mostraré cómo aplicarlos a las facturas automáticamente.
+4:42
+Iré a "Configuración", "Ajustes".
+4:48
+Después iré a la sección "Impuestos".
+4:51
+Configuraré los predeterminados para ventas y compras.
+4:54
+Se eligen con el país de tu empresa, pero puedes modificarlos.
+5:01
+Toma en cuenta que estos se aplicarán a todas las facturas nuevas
+5:07
+aunque también puedes cambiarlos si es necesario.
+5:13
+Ya sabes que las tasas de impuestos varían por país,
+5:18
+así que Odoo cuenta con reglas y posiciones fiscales
+5:22
+para aplicar los impuestos correctos al vender productos fuera del país.
+5:28
+Iré a la página de posiciones fiscales desde "Configuración".
+5:33
+Selecciono "Posiciones fiscales" y aparecen algunas.
+5:37
+Una de ellas se llama AvaTax.
+5:40
+Está allí porque primero instalé ese módulo desde Aplicaciones.
+5:46
+Stealthy Wood está en Estados Unidos, puedo usar TaxCloud o AvaTax.
+5:54
+Estos programas ayudan a calcular los impuestos en tiempo real
+5:59
+para cada ciudad, estado y jurisdicción de este país.
+6:07
+Consulta nuestra documentación si quieres saber más.
+6:11
+Hice un video sobre AvaTax, no te lo pierdas.
+6:15
+Puedo usar una de estas posiciones o crear una nueva.
+6:21
+Crea nuevos impuestos y posiciones fiscales solo si tu equipo de contabilidad los necesita
+6:29
+o podrías ocasionar graves problemas financieros.
+6:36
+Por suerte, en Stealthy Wood trabajamos con Carol
+6:40
+y me dejó crear una para poder realizar este ejemplo.
+6:44
+Te mostraré cómo hacerlo. Seleccionaré "Nuevo".
+6:48
+Crearé una para un país, en este caso para Canadá.
+6:58
+Ahora puedo elegir si usar la API de AvaTax o de TaxCloud.
+7:03
+No seleccionaré esos campos, son para Estados Unidos.
+7:07
+Abajo aparece la empresa asociada a la posición fiscal.
+7:13
+Del lado derecho están las opciones para aplicar la posición a una venta.
+7:18
+Al seleccionar "Detectar de forma automática" aparecen más opciones.
+7:24
+Puedo seleccionar si deben tener un número fiscal y el grupo del país.
+7:28
+Elegiré la primera opción.
+7:31
+En el campo "País" escribiré Canadá.
+7:35
+Debería aparecer en la lista porque es un país real.
+7:40
+Aparecerán los campos "Estados federales" y "Rango postal".
+7:45
+Agrega más detalles en ellos si es necesario.
+7:50
+Los dejaré vacíos por ahora.
+7:54
+Continuemos, Odooers.
+7:57
+Esta posición aplicará a los clientes que tengan un número fiscal válido.
+8:05
+Ahora configuraré los impuestos en las pestañas de abajo.
+8:11
+Un producto tiene un impuesto del 15% en EE. UU. y del 5% en Canadá.
+8:16
+Haré clic en "Agregar una línea" y seleccionaré el producto correcto,
+8:22
+lo escribiré en "Impuestos a aplicar".
+8:25
+Es el 5% para Canadá.
+8:29
+Escribiré eso y haré clic en "Crear y editar".
+8:34
+En el campo "importe" escribiré 5%.
+8:39
+Después haré clic en "Guardar y cerrar", así de fácil lo creé.
+8:45
+En la pestaña "Mapeo de cuentas" puedo agregar más reglas
+8:51
+o cualquier nota legal necesaria. Esto está más relacionado con contabilidad.
+8:57
+Asegúrate de ver esos tutoriales. Aprenderás mucho, son increíbles.
+9:03
+Terminamos, pero antes quiero mostrarte cómo especificar una posición fiscal
+9:11
+en un formulario de contacto.
+9:13
+Primero voy a guardar esto.
+9:17
+Iré al tablero principal y abriré Contactos.
+9:23
+Elegiré a Audrey porque creo que su cabello es bonito.
+9:31
+Aquí abriré la pestaña "Ventas y compra", Odooers.
+9:34
+Iré a la sección "Posición fiscal"
+9:40
+y seleccionaré la correcta.
+9:44
+Vean qué fácil, Odooers.
+9:47
+El cliente siempre tendrá la posición correcta.
+9:53
+Esto es todo.
+9:55
+Así pueden configurar y aplicar impuestos dentro de Odoo.
+
+7.17	Sales Tax: Part 3 | Odoo Sales
+Link: https://www.youtube.com/watch?v=PwbZ-6gDxmg
+
+0:01
+Hola Odooers. Ya vimos cómo configurar impuestos, calcularlos, posiciones fiscales, etc.
+0:09
+Ahora veremos lo fácil que es usar estos impuestos en las cotizaciones.
+0:13
+En nuestra base de datos iremos al tablero de Ventas.
+0:20
+Haremos clic en "Nuevo" para crear una cotización y ver cómo funcionan los impuestos de venta.
+0:27
+Recuerda que primero debemos agregar un cliente.
+0:31
+Le haremos una cotización a Suzy Cliente, muy real.
+0:38
+Ella quiere comprar las pantallas acústicas.
+0:44
+Haremos clic en "Agregar un producto" y seleccionaré Pantallas acústicas.
+0:49
+Notarás que ya cambió algo.
+0:52
+En la columna de impuestos ya apareció
+0:56
+el impuesto automático del 15%, porque no se ha configurado un impuesto al cliente.
+1:02
+Tampoco configuramos una posición fiscal en el contacto.
+1:06
+Si no sabes de qué hablo, revisa la parte 2.
+1:11
+Pero en realidad, me acaba de decir que se mudó a Canadá.
+1:18
+En ese caso, vamos a cambiar el impuesto en nuestra orden.
+1:24
+Haremos clic en el área de impuestos y notarás que podemos seleccionar uno desde aquí.
+1:30
+Seleccionaré el impuesto de 5% de Canadá y listo.
+1:36
+Esto lo configuramos en el video pasado, ahora solo haremos clic en Confirmar.
+1:42
+Hagamos clic en Previsualización de cliente par saber cómo lo verá ella.
+1:49
+Si vamos a la sección de precios verás que los impuestos se indican en esta columna.
+1:56
+Sabrán el porcentaje exacto de impuestos, fácil, ¿no?
+2:02
+Aquí concluimos la clase sobre impuestos.
+2:07
+Espero que aprendieras mucho.
+2:09
+Si quieres aprender más sobre Odoo
+2:14
+ve el resto de los videos y nuestra documentación.
+2:18
+Eso es todo, Odooers. Nos vemos.
+
+7.18	Delivery Prices | Odoo Sales
+Link: https://www.youtube.com/watch?v=fyFPOUx2LJc
+0:05
+Hola de nuevo Odooers. Soy José Ignacio.
+0:07
+Hoy aprenderemos a gestionar cargos por entrega en Odoo.
+0:12
+En Stealthy Wood nos gusta ser flexibles con el costo de los envíos.
+0:19
+Usamos un precio fijo o lo calculamos con algunas reglas,
+0:25
+eso depende de los productos a enviar.
+0:27
+Por ejemplo, si es un artículo pequeño, tiene un costo fijo.
+0:33
+Cuando son artículos más grandes y pesados es diferente
+0:39
+y depende del peso. Cuesta más enviar estos productos.
+0:44
+Odoo te permite personalizar estos precios a las necesidades de tu empresa.
+0:49
+Está integrado a FedEx, UPS y otros servicios de correo
+0:57
+para agilizar y facilitar las entregas.
+1:01
+Es momento de entregarte una buena lección acerca de los precios de envío.
+1:09
+Ese fue un buen chiste, ¿no? No importa, comencemos.
+1:13
+Iniciaré en el tablero de Ventas.
+1:15
+Activa la función "Métodos de envío" antes de empezar.
+1:20
+Ve a "Configuración", "Ajustes".
+1:25
+La función "Métodos de envío" está dentro de la sección "Envío".
+1:33
+También aparecerán los servicios que se pueden integrar con Odoo.
+1:36
+Consulta los tutoriales y la documentación de Inventario para aprender más.
+1:41
+Enfoquémonos en la configuración general de los envíos.
+1:46
+Haz clic en el enlace interno o ve a "Configuración", "Métodos de envío".
+1:53
+Aquí aparecen todos los métodos de envío configurados en la base de datos.
+1:58
+Hay varios métodos de entrega integrados listos para usar
+2:02
+pero esta columna indica algo, muchos no están publicados.
+2:07
+No están habilitados, así que no es posible usarlos.
+2:10
+Para utilizar un método debe estar publicado.
+2:14
+Te mostraré cómo hacerlo, pero primero crearé un nuevo método de envío.
+2:19
+Haré clic en "Nuevo".
+2:23
+Agregaré su nombre, será "Precio fijo de entrega".
+2:29
+Luego está el campo "Sitio web" para seleccionar el sitio en que se aplicará.
+2:36
+Lo dejaré vacío para aplicarlo en todos.
+2:44
+El campo "Proveedor" permite elegir quién realizará la entrega,
+2:50
+al seleccionarlo aparecen varios.
+2:53
+Si elijo uno de los servicios integrados, como FedEx
+2:58
+lo selecciono en la lista y cambiará el formulario.
+3:02
+Debo agregar la información de envío de mi empresa para el servicio de entrega.
+3:08
+Te mostraré qué pasa si regreso a "Proveedor".
+3:12
+Ahora seleccionaré "Recoger en tienda" y volverá a cambiar.
+3:18
+Los clientes podrán ir a mi tienda a recoger sus productos.
+3:21
+Esta opción solo estará disponible si esa función está activada
+3:28
+en los ajustes de Sitio web.
+3:30
+Tomen eso en cuenta, Odooers.
+3:33
+En Stealthy Wood cobramos un precio fijo para entregar artículos pequeños.
+3:40
+Elegiré "Precio fijo" en el campo "Proveedor".
+3:46
+Abajo está el campo "Empresa" para el método, allí seleccionaré la correcta.
+3:53
+Usalo si trabajas en un entorno multiempresa y debes elegir una.
+3:58
+Dejaré el campo vacío igual que el anterior, quiero aplicarlo a todas mis empresas.
+4:04
+Continuemos, Odooers.
+4:06
+El campo "Producto de envío" está arriba a la derecha
+4:10
+y es lo que aparece en la línea de la orden de venta para este método de envío.
+4:15
+Este es el nombre que verá el cliente si se le cobra la entrega.
+4:19
+En este caso usaré "Entrega".
+4:25
+Además lo voy a crear, será un nuevo producto.
+4:32
+Después puedo elegir si agregar un margen a la tarifa.
+4:38
+En este momento no lo haré.
+4:41
+Puedes ofrecer envío gratuito en órdenes superiores a la cantidad establecida.
+4:47
+Al marcar esa casilla aparecerá otro campo
+4:54
+en el que deberás escribir el monto.
+4:57
+Escribiré 420, me parece una buena cantidad.
+5:03
+Ahora te mostraré la pestaña "Precios".
+5:08
+Configuraré $7 como precio fijo para los artículos pequeños.
+5:14
+Espero que eso sea suficiente para cubrir los costos de envío.
+5:18
+Abriré la pestaña "Disponibilidad de destino".
+5:21
+Allí elegiré los países, estados o códigos postales que aplicarán al método.
+5:28
+Aplicarán a todas las opciones disponibles en cada categoría si se quedan vacíos.
+5:34
+Dejaré estos campos en blanco para que todos los clientes accedan a este precio.
+5:41
+Pasa lo mismo que con los campos "Empresa" y "Sitio web".
+5:44
+Ahora abriré la pestaña "Descripción".
+5:46
+Aquí podemos agregar una descripción que aparecerá en línea
+5:52
+y abajo de las órdenes de venta y los correos electrónicos.
+5:58
+Luego de configurar todo correctamente
+6:00
+hay que publicar el método para que los clientes puedan usarlo.
+6:07
+Haz clic en el botón inteligente de arriba para modificar su estado.
+6:12
+Cambiará de "Sin publicar" en rojo a "Publicado" en verde, Odooers.
+6:18
+Ahora crearé otro método de envío
+6:21
+que usará reglas. Lo llamaré "Envío con reglas".
+6:25
+Usaré el producto anterior, le cambié el nombre para encontrarlo más rápido.
+6:31
+En este caso el proveedor es "Según las reglas".
+6:35
+Todo listo.
+6:36
+Iré a "Precios" para agregar una línea.
+6:39
+Verás que el campo "Condición" y los demás
+6:43
+son una ecuación para definir las reglas de este método de envío.
+6:48
+Esta permite configurar las cosas de distintas formas.
+6:51
+Puedo elegir entre peso, volumen, precio por volumen o cantidad de artículos en la orden.
+6:59
+La opción que elijas debe estar configurada en el formulario de los productos
+7:05
+o la regla no funcionará correctamente.
+7:07
+Por ejemplo, si seleccionas peso y volumen,
+7:10
+estos valores deben estar configurados en los formularios correspondientes.
+7:17
+Solo usaré el peso porque es más costoso enviar productos pesados.
+7:21
+Supongamos que si el peso es mayor a
+7:27
+o igual a 30 libras
+7:33
+el costo será de $20 más el peso.
+7:39
+También podría elegir que sea un múltiplo del peso o del factor.
+7:46
+Para eso solo agregaría un monto al otro campo que aparece aquí.
+7:51
+En este tutorial solo usaré $20, luego haré clic en "Guardar y crear nuevo".
+7:58
+Quiero agregar otra regla para este método de envío.
+8:02
+Aparecerá una nueva ventana para crear reglas e incluiré otra.
+8:08
+Si el peso es mayor o igual a $100
+8:15
+el costo de entrega también será $100.
+8:19
+Escribiré 100 en ese campo.
+8:24
+Al hacer clic en "Guardar y cerrar" sucederá algo más.
+8:31
+No quiero agregar más reglas ahora, pero puedo hacerlo después.
+8:36
+Las reglas que acabo de crear aparecerán en la pestaña "Precios", Odooers.
+8:42
+Es importante que mencione que el orden y la secuencia de las reglas sí importa.
+8:48
+La regla que esté primero en la lista será la que Odoo aplicará primero.
+8:52
+Si la regla no aplica a la orden, Odoo aplicará la siguiente en la lista.
+8:58
+Cambiaré el orden de estas reglas.
+9:01
+Quiero que la regla de 100 sea la primera
+9:07
+para que Odoo revise si el producto pesa eso o más.
+9:12
+Si no, después revisará si pesa más de 30.
+9:17
+Luego de crear y configurar las reglas hay que publicarlo.
+9:23
+Por último haré clic en el botón para publicarlo. Veamos las reglas en acción.
+9:28
+Iré al tablero de Ventas y haré clic en "Nuevo".
+9:32
+Seleccionaré a Azure Interior como cliente.
+9:35
+Quieren comprar pegamento para madera, un producto pequeño.
+9:41
+Luego de agregarlo seleccionaré "Confirmar".
+9:45
+Ahora agregaré el costo de envío,
+9:48
+solo debo presionar "Agregar envío".
+9:51
+Usaré el primero que creé, que es el precio fijo.
+9:59
+Los campos se completarán solos.
+10:01
+El costo ya está incluido, entonces lo agregaré.
+10:06
+Aparecerá en la cotización.
+10:08
+No solo agrega el precio de envío a la orden,
+10:11
+sino que también actualiza los campos de producto y descripción.
+10:16
+¿Y qué pasa con los envíos gratuitos? ¿Cómo los configuro?
+10:20
+Veamos.
+10:21
+Supongamos que el cliente se equivocó, quiere cien.
+10:27
+Ahora puede recibir su envío gratis y pasa algo más.
+10:32
+Cambió la cantidad y la línea de envío aparece en amarillo
+10:38
+al igual que el botón "Actualizar costo de envío".
+10:42
+Haré clic en él.
+10:45
+Luego solo presiono "Actualizar".
+10:48
+Así recibirá envío gratuito.
+10:51
+Quiero mostrarte algo más. Ahora usaré el que usa las reglas.
+10:57
+Crearé una nueva cotización para Azure Interior.
+11:02
+El producto para este ejemplo será un mueble, el escritorio para cuatro personas.
+11:08
+Lo seleccionaré.
+11:10
+El peso debe estar configurado para que la regla funcione.
+11:16
+Revisaré eso con el enlace interno.
+11:18
+Abriré la pestaña "Inventario".
+11:21
+No tiene peso, pero no hay problema.
+11:25
+Sé que pesa lo mismo que puedo levantar con una mano.
+11:30
+110 kilos.
+11:34
+Eso en libras serían 240.
+11:42
+Usaré 110 kilos.
+11:45
+Todo listo, regresaré a la orden de venta.
+11:49
+Guardo y regreso.
+11:52
+Agregaré el envío.
+11:54
+Ahora elegiré el que usa las reglas para ver qué pasa.
+12:00
+¿No es maravilloso?
+12:03
+El producto pesa más de 100 kilos y Odoo aplicó el envío gratuito.
+12:09
+Un perfecto cien por cien.
+12:12
+Eso es todo por hoy, Odooers.
+12:19
+Así se configuran los precios de entrega. Gracias y buenas noches.
+
+
+7.19	Delivery Lead Times | Odoo Sales
+Link: https://www.youtube.com/watch?v=X5lTOpEsoT8&t=1s
+0:05
+Hola Odooers, ¿no les encanta hacer compras en línea?
+0:12
+Después de hacer estos videos amo relajarme y navegar por tiendas en línea.
+0:20
+Compro lo esencial y en unos días recibo los productos.
+0:27
+Lo que odio de esto es cuando los productos se tardan en llegar o nunca llegan.
+0:35
+Odio que las empresas jueguen con mis emociones así.
+0:41
+Esta es la mejor manera de perder clientes.
+0:47
+En Stealthy Wood usamos plazos de entrega para evitar estos desastres.
+0:54
+Por si no lo sabes, un plazo de entregas es el número de días
+0:58
+entre el momento en el que el cliente realiza una orden hasta que la recibe.
+1:03
+Así podemos programar fechas de entrega o plazos de entrega específicos.
+1:08
+Así los clientes saben cuándo esperar su entrega. Te daré un ejemplo.
+1:15
+Digamos que nuestro plazo de entrega es de 10 días.
+1:19
+Con eso, Odoo programará la fecha de entrega 10 después de la fecha de orden.
+1:24
+El cliente tendrá esta información al instante
+1:28
+y sabrá exactamente cuándo llegará su pedido.
+1:34
+Si alguien confirma una orden el 1 de julio,
+1:37
+el cliente recibirá una notificación diciendo que lo recibirá el 11, 10 días después.
+1:44
+Es importante configurar el plazo de entrega bien porque afectará la satisfacción del cliente.
+1:50
+Si no tenemos cuidado nuestros clientes se irán porque no entregamos las cosas a tiempo.
+1:59
+Si usamos los plazos bien, tendremos ventaja sobre nuestros competidores.
+2:06
+Si entregamos más rápido o de forma más fiable,
+2:11
+los clientes vendrán a nosotros porque podrán confiar.
+2:19
+Vayamos al tablero de Ventas dentro de nuestra base de datos.
+2:26
+Los plazos de entrega se configuran en los formularios de producto individuales.
+2:31
+Vayamos a Productos > Productos
+2:35
+y aquí seleccionaremos un producto para configurar un plazo de entrega, los cajones.
+2:44
+En el formulario iremos a "inventario" y en la sección "Logística"
+2:52
+veremos el campo "Plazo de entrega del cliente", donde configuraremos el plazo para este producto.
+2:58
+Me lleva 5 días entregar este producto y quiero que mi cliente lo sepa.
+3:03
+Solo escribiré aquí el número 5.
+3:08
+Por defecto, el campo estará en 0,
+3:11
+recuerda eso al configurar tus productos, para evitar confusiones.
+3:17
+Ahora veamos cómo funciona.
+3:22
+Iremos a Órdenes > Órdenes y seleccionaremos "Nuevo".
+3:29
+Azure Interior será mi cliente y en el producto pondré el cajón.
+3:37
+Lo confirmaremos y aquí arriba veremos la fecha de la orden,
+3:43
+que es la fecha en la que se hizo la orden, el 10/05.
+3:48
+Si vamos a "otra información" y bajamos a "entrega", la fecha de entrega dirá "esperado: 10/10".
+3:55
+Es decir, 5 días después de la fecha de la orden, como lo acabamos de configurar.
+4:01
+Si hacemos clic en el botón inteligente de entrega
+4:06
+llegaremos a la orden de entrega, que tiene los detalles de entrega de la orden de venta.
+4:11
+Aquí veremos el plazo de entrega reflejado en la fecha programada.
+4:18
+Muy fácil.
+4:21
+Te enseñaré otro truco para obtener más seguridad.
+4:26
+Sí, podemos darle más seguridad a los plazos de entrega.
+4:33
+Si hacemos esto nuestro personal nunca se atrasará con las entregas.
+4:40
+Cambiaremos de aplicación a Inventario.
+4:46
+Escribiré el nombre para ir a ella.
+4:50
+Ahora iremos a Configuración > Ajustes.
+4:55
+Bajaremos hasta la sección "Programación avanzada"
+5:02
+y marcaremos la casilla a un lado de "Plazo de seguridad para ventas".
+5:08
+Verás que apareció un campo adicional,
+5:14
+en este campo ingresaré un número de días específico
+5:17
+para que Odoo programe entregas unos días antes de la fecha esperada, internamente.
+5:23
+Así entregaremos la orden a tiempo, o incluso antes, sin importar qué pase.
+5:30
+Para este ejemplo adelantaremos las fechas de entrega por 2 días.
+5:36
+Solo tenemos que escribir el número 2.
+5:41
+Recuerda que debes guardar los cambios que hagas en ajustes para que se realicen.
+5:49
+Una vez guardados los ajustes,
+5:56
+regresaremos a la aplicación Ventas.
+6:00
+Abriremos la orden de Azure Interior y la vamos a duplicar.
+6:07
+Una vez duplicada, la vamos a confirmar de nuevo.
+6:14
+Notarás que la fecha de la orden sigue igual, 10/5.
+6:19
+Si vamos a "otra información" la fecha de entrega sigue siendo "10/10".
+6:26
+Pero vayamos a "Entrega".
+6:34
+Me encanta enseñarte la magia de Odoo.
+6:39
+Mira que ahora la fecha programada es 10/08,
+6:44
+dos días de la fecha esperada, para poder lidiar con retrasos inesperados que puedan ocurrir.
+6:49
+Así podremos hacer la entrega a tiempo, si no es que antes, no importa qué pase.
+6:55
+¿No te encanta recibir tus órdenes antes?
+6:58
+Por eso el final del tutorial llegó antes de lo esperado.
+7:04
+Esto es todo lo que debes saber, te mostré los plazos de entrega en solo unos minutos.
+7:10
+Eso es todo...
+7:14
+Me tengo que ir, ya llegó mi orden. Justo a tiempo.
+7:23
+Nos vemos, Odooers.
+7:26
+¡Espera! ¡Ya voy!
+
+7.20	Dropshipping | Odoo Sales
+Link: https://www.youtube.com/watch?v=V4BdvVcuajY&t=1s
+0:04
+Hola Odooers, soy José Ignacio. En Stealthy Wood no nos gusta desperdiciar.
+0:10
+Para asegurarnos de cumplir con ese objetivo
+0:13
+no tenemos productos ocupando espacio y empolvándose en nuestro almacén
+0:20
+pero tampoco queremos quitarlos del catálogo.
+0:24
+Uno nunca sabe cuándo se volverán a poner de moda nuestros shorts de mezclilla.
+0:33
+Afortunadamente podemos seguir ofreciéndolos sin que estorben en el almacén.
+0:41
+Te preguntarás cómo y la respuesta es envío directo.
+0:45
+Con este método no es necesario tener productos en el inventario,
+0:49
+los proveedores y distribuidores pueden enviarlos directo a los clientes cuando los ordenan.
+0:55
+Olvídate de volver a gestionar estos productos.
+0:58
+Los proveedores se encargarán de todo, nosotros solo debemos vender.
+1:04
+Además los nuevos productos nos costarán menos
+1:08
+porque no invertiremos nada, ya los vendimos.
+1:14
+El envío directo permite ofrecer muchos más productos
+1:19
+porque no es necesario almacenarlos. Piénsenlo, Odooers.
+1:25
+Este método optimiza el almacén, aumenta el catálogo, disminuye la carga de trabajo,
+1:31
+ayuda a ahorrar dinero y a evitar multiniveles mientras aumentan las ganancias.
+1:37
+El envío directo está lleno de ventajas.
+1:41
+Pero mejor empecemos con este flujo, Odooers.
+1:45
+Primero debo activar esa función para empezar con este tutorial.
+1:51
+Iré a Compra, luego a Configuración y después a Ajustes.
+1:57
+Allí busco "Logística", selecciono "Triangulación" y guardo.
+2:04
+Es momento de usarla en algún producto
+2:11
+para que veas cómo funciona este flujo.
+2:14
+Odoo hace que este proceso sea muy fácil.
+2:22
+Voy a Productos y luego hago clic en Productos, seleccionaré el bote de basura.
+2:29
+Una vez en el formulario del producto a configurar hay que hacer algunas cosas.
+2:34
+En Operaciones y Rutas de la pestaña Inventario hay que seleccionar "Triangular".
+2:42
+Al seleccionarla, Odoo sabrá que debe usar esta ruta
+2:46
+cuando un cliente ordene ese producto y no lo tengamos en el inventario.
+2:50
+Ahora la pregunta es
+2:52
+¿Cuál de nuestros proveedores se lo enviará al cliente?
+2:59
+Para eso hay que ir a la pestaña "Compra" y seleccionar uno.
+3:04
+Agregaré otro, en este caso a Lumber Inc.
+3:08
+El precio que manejan es $4.20.
+3:13
+Esta es la segunda cosa necesaria para que este flujo funcione correctamente.
+3:18
+Al hacer clic en "Agregar una línea" asigno un proveedor.
+3:22
+Sabemos el precio de compra. ¿Y si hay varios con otro precio, nombre y ubicación?
+3:30
+Odoo seleccionará al primer proveedor de la lista en este caso.
+3:34
+Asegúrate de que el proveedor que quieres usar sea el primero en la lista.
+3:39
+Puedes arrastrarlo y soltarlo hasta arriba con los puntos de la izquierda.
+3:43
+Quizás quieras usar a Azure Interior o el que tiene mejor precio.
+3:48
+Solo necesitas activar la ruta de triangulación en la pestaña "Inventario"
+3:52
+y después establecer un proveedor.
+3:56
+Es momento de ver esta función en operación.
+4:01
+Entraré a Ventas desde el tablero principal
+4:05
+y crearé una orden de venta para el bote con el botón "Nuevo".
+4:09
+Ahora elegiré un cliente.
+4:11
+Seleccionaré a Susie Customer.
+4:19
+Agregaré el producto y confirmaré la orden. Esto último es muy importante.
+4:28
+El botón inteligente "Entrega" aparecería arriba al hacer clic en "Confirmar"
+4:32
+e indicaría que hay una orden de entrega para el producto
+4:35
+pero solo aparece el botón inteligente "Compra"
+4:41
+porque el proveedor le enviará el producto al cliente.
+4:45
+Hay que confirmar y validar la orden de compra para completar el flujo.
+4:50
+Haré clic en ese botón
+4:52
+y aparecerá la orden de compra para la orden de venta que acabo de crear.
+4:59
+La confirmaré y aparecerá el botón inteligente "Triangular".
+5:08
+También haré clic en ese botón.
+5:13
+Esta es la orden de envío directo.
+5:16
+Estas órdenes tienen las letras "DS".
+5:22
+En las pestañas "Operaciones", "Información adicional" y otras
+5:26
+está toda la información relacionada con la orden de venta original.
+5:31
+En la parte de arriba aparece el documento origen que es la orden de compra anterior.
+5:38
+Regresaré a "Operaciones detalladas".
+5:41
+Todo está en orden, haré clic en "Establecer cantidades".
+5:47
+Revisaré que solo coincida una unidad.
+5:55
+Digamos que el proveedor confirmó el envío después de que revisé la cantidad ordenada.
+6:01
+Solo valido la orden y listo, terminé.
+6:06
+El estado de esta orden está completado, Odooers.
+6:11
+Si regreso a la orden de venta original
+6:14
+con las migas de pan, que hoy es de centeno, aparecerá algo más.
+6:23
+Es un nuevo objeto, ¿ya lo viste?
+6:26
+Es el botón inteligente "Triangulación".
+6:30
+Si sí lo viste tienes muy buena vista.
+6:35
+Aparece al validar las órdenes correspondientes.
+6:44
+Me llevará a la orden de envío directo si hago clic en él.
+6:51
+El estado "Hecho" marca que está completada.
+6:56
+Así de fácil es triangular envíos con Ventas de Odoo.
+7:00
+Toma cerca de 10 minutos configurar todo
+7:06
+para que los proveedores hagan los envíos y almacenen los productos.
+7:10
+Así puedes optimizar tu almacén, ahorrar dinero, ampliar tu catálogo, comenzar una MLM, lo que quieras.
+7:17
+Gracias, Odooers. Revisen otros tutoriales y la documentación.
+7:23
+Les compartiré mis conocimientos en otros videos. Que tengan buen día, les aprecio.
+
+7.21	Pricelists: Multiple Prices Per Product | Odoo Sales
+Link: https://www.youtube.com/watch?v=VeQxtSIfMuc
+Intro
+0:05
+what's up oders and welcome back today
+0:08
+we're going to discuss how to configure
+0:09
+price list for customers and products
+0:11
+using the ODU sales app companies often
+0:13
+utilize price list to charge different
+0:15
+prices on products or offer customized
+0:17
+pricing for specific customers targeting
+0:20
+Regional demographics adjusting B2B or
+0:22
+b2c pricing running seasonal product
+0:25
+sales but here at stealthy wood we have
+0:28
+a surplus of outdoor furniture in in our
+0:30
+warehouse to clear it out we're setting
+0:32
+up price rules for a big sale so let's
+0:34
+dive in and see how we can do that in
+0:36
+Odo sales all right kicking things off
+Setting
+0:39
+here in our sales app we first need to
+0:41
+head over to configuration at the top
+0:43
+followed by settings and here we just
+0:46
+want to make sure that our Price Less
+0:47
+setting is enabled as you can see we've
+0:50
+already ticked this specific check box
+0:51
+but if you haven't done so yet in your
+0:53
+database make sure to do so and then
+0:55
+click save before moving on now let's
+Pricelists
+0:58
+migrate over to our Priceless page and
+1:00
+we can do that by clicking this Price
+1:01
+Less link beneath the
+1:04
+feature here you'll see our currently
+1:07
+defined price list we have our Benelux
+1:09
+here for a special discount for Belgium
+1:12
+Netherlands Luxembourg including
+1:14
+currency conversions we have e here
+1:16
+which is special pricing for our
+1:18
+European union and membership discounts
+1:20
+on special items and shipping for our
+1:21
+loyal customers but now let's create a
+1:24
+new price list for our end of clearance
+1:27
+sale first we're going to click new in
+1:29
+the upper leftand corner and we're going
+Create New Pricelist
+1:32
+to name this price list winter outdoor
+1:35
+furniture sale we're going to leave the
+1:38
+company field here as is and we're also
+1:40
+going to leave the country groups field
+1:43
+blank to apply to all stealthy wood
+1:45
+customers if targeting a specific region
+1:48
+you could select one or multiple country
+1:50
+groups
+1:51
+here then in the price rules tab we're
+1:54
+going to click add a
+1:55
+line right now we'll be creating a
+1:58
+advanced Priceless rule through this
+2:00
+pop-up window right here but I'll also
+2:02
+show you how to create a basic one later
+2:04
+in the video first we can select if we
+2:07
+want this rule to apply to a product or
+2:09
+a category we're going to select
+2:11
+category for this
+2:13
+example and beneath that in the category
+2:16
+field we're just going to type in
+2:18
+outdoor and select all salable outdoor
+2:21
+furniture as our
+2:22
+category next we can determine the price
+2:26
+type you can read about these options in
+2:28
+our documentation
+2:30
+but Odo allows us to enter a discounted
+2:34
+percentage but we can also add a
+2:36
+discounted fixed price like $5 off for
+2:38
+example but today we're going to be
+2:40
+using our most dynamic one which is
+2:44
+Formula now watch this first I'm going
+2:46
+to apply a 20%
+2:49
+discount and notice the blue tip boxes
+2:52
+here on the right these help provide a
+2:55
+guidance for configuring detailed price
+2:57
+rules we love making our prices end in 9
+2:59
+9 it makes customers think the product
+3:02
+is cheaper than it really is so to make
+3:04
+sure that happens every time we're going
+3:06
+to round this off to
+3:08
+10 and then below that we're going to
+3:11
+follow up with the extra fee setting and
+3:13
+put minus
+3:16
+01 with that set up ODU will know to
+3:19
+round up the price of an outdoor item to
+3:21
+the nearest $10 then subtract 1
+3:24
+cent to encourage larger purchases we're
+3:27
+going to set the minimum quantity field
+3:29
+here set to two and this ensures that
+3:32
+the discount applies only when customers
+3:35
+buy at least two outdoor furniture items
+3:38
+now this sale only lasts for the winter
+3:40
+so we're going to click on the validity
+3:42
+period here and we're going to start
+3:44
+this with today and then click apply and
+3:47
+then we're going to click the end date
+3:49
+here and put it to the last day of
+3:51
+February then click apply
+3:55
+again okay this looks great and we're
+3:57
+all set here so we're just going to
+3:58
+click save and close
+4:02
+now with that we have a new price rule
+4:04
+added to this tab and just so you know
+4:07
+you can add as many of these price rules
+4:08
+to a price list as you like Advanced
+4:11
+price list such as the one we just
+4:13
+configured can also be applied for
+4:15
+subscriptions through the recurring
+4:17
+prices tab here for more information
+4:19
+about that check out our subscription
+4:21
+tutorials but moving on we're going to
+4:23
+click this e-commerce tab here and
+4:25
+you're going to notice that the
+4:27
+furniture sale can be applied to our
+4:29
+website as well and below that we have a
+4:32
+selectable checkbox and when that's tick
+4:35
+this makes the Priceless viewable and
+4:37
+selectable for our customers on our
+4:39
+online store now let's see this price
+Show Discount on Website
+4:41
+list in action we're going to navigate
+4:43
+to products at the top followed by
+4:45
+products again and we're going to select
+4:46
+a piece of our outdoor furniture like
+4:49
+this outdoor chair and we're just going
+4:51
+to jump to the product page on our
+4:53
+online store and to do that we're just
+4:55
+going to click the go to website smart
+4:56
+button here at the top
+5:00
+the price of the item as you've most
+5:02
+likely noticed hasn't changed yet
+5:05
+however if our customer clicks this plus
+5:08
+sign to add two of these to their cart
+5:11
+you'll see the discounted price to
+5:13
+double check oo it's time to do some
+5:15
+Mental Math 20% of the full price of $75
+5:19
+is$ 15 that's $60 minus 1 C which is
+5:26
+$59.99 now before we go I know I promise
+Simple Pricelist Config
+5:29
+you that I'd show you an even quicker
+5:31
+way to set a price list and price rule
+5:33
+to a product which can be directly done
+5:36
+from the product page itself so we're
+5:38
+just going to click back onto our
+5:40
+product form and back on the product
+5:42
+form we're just going to click this
+5:43
+Priceless smart button at the top and
+5:46
+here we can configure a price list for
+5:48
+this product only then all we have to do
+5:50
+is click
+5:51
+new and here we can enter the Priceless
+5:54
+name the price minimum quantity as well
+5:58
+as the start and end date
+6:00
+and there you have it o doers just learn
+Conclusion
+6:02
+how to create configure and use
+6:03
+Priceless and price rules to create
+6:05
+multiple prices per product in Odo sales
+6:08
+stay tuned for more tutorials thanks for
+6:10
+watching and I'll see you in the next
+6:12
+video
+
+7.22	Pricelists: Discounts and Margins | Odoo Sales
+Link: https://www.youtube.com/watch?v=d-upMNmIftU&t=1s
+
+0:04
+¿Qué pasa, Odooers? Yo les diré qué pasa, estamos bajando nuestros precios.
+0:10
+En Stealthy Wood nos encanta ofrecer descuentos.
+0:14
+Los descuentos son una manera de recompensar a nuestros clientes frecuentes.
+0:19
+También son una forma de hacer que un cliente compre más de lo que quería, por psicología.
+0:26
+Les ofrecemos un buen descuento cuando compran varios artículos, pero no es todo.
+0:34
+También redondeamos nuestros precios para que todos terminen en 99 centavos.
+0:40
+Así nuestros precios son uniformes, profesionales y llamativos para nuestros clientes.
+0:46
+Esto genera todavía más ventas.
+0:50
+Incluso podemos configurar un margen de ganancias mínimo para ganar algo con cada venta,
+0:58
+Esto nos garantiza ganancias, lo que me parece increíble.
+1:03
+Vayamos a Ventas para ver lo fácil que es usar los descuentos y márgenes con listas de precios.
+1:11
+Antes de empezar tenemos que activar funciones importantes,
+1:17
+así que iremos a configuración > ajustes.
+1:22
+Bajaremos a la sección "Precio",
+1:27
+donde tendrás que activar los "descuentos" y "márgenes".
+1:32
+Estas dos funciones hacen cosas específicas,
+1:35
+determinan si los descuentos y márgenes aparecen en cotizaciones y órdenes de venta.
+1:41
+Aunque no actives los ajustes puedes usar los descuentos y márgenes.
+1:46
+Ya que estamos aquí, veamos que la función "lista de precios" esté activa.
+1:51
+Debemos seleccionar "reglas de precio avanzadas".
+1:55
+Si quieres aprender más sobre precios, mira nuestros otros videos.
+2:00
+Cuando selecciones la opción correcta recuerda guardar antes de continuar.
+2:08
+Ahora debemos configurar listas de precio para ver cómo ayudan estos ajustes.
+2:14
+Vayamos a nuestra página de precios,
+2:16
+Ya sea con este enlace de lista de precios, o en Productos > listas de precios.
+2:23
+Desde aquí crearemos una lista de precios para nuestros clientes favoritos.
+2:28
+Haremos clic en nuevo y de nombre pondremos...
+2:32
+"Clientes favoritos", porque soy muy ocurrente.
+2:38
+Iba a decir que soy genial pero no.
+2:41
+En este caso no cambiaré ni la divisa ni la empresa.
+2:48
+Quiero enfocarme en la pestaña "Reglas de precio".
+2:53
+Haremos clic en "agregar una línea" y podremos personalizar las reglas.
+3:01
+Primero tenemos la sección "Cálculo del precio".
+3:04
+Podemos seleccionar "precio fijo", "descuento" o "fórmula".
+3:10
+El precio fijo quiere decir que el precio para esta regla será fijo, fácil.
+3:18
+En este video veremos cómo funcionan las opciones "descuento" y "fórmula".
+3:22
+Primero seleccionaremos el campo "descuento".
+3:29
+Notarás que el campo de abajo cambió a un porcentaje de descuento.
+3:34
+En esta ventana las opciones que veas dependerán de lo que hayas elegido para el cálculo.
+3:39
+Mira lo que pasa si selecciono fórmula. Solo para que lo tomes en cuenta.
+3:46
+Digamos que quiero dar el 10% de descuento cuando mis clientes compren al menos 3 artículos.
+3:53
+Hay varias formas de hacerlo, primero seleccionamos el cálculo "descuento".
+4:00
+Si queremos, solo tenemos que poner 10 aquí.
+4:03
+En "aplicar en" seleccionaremos "todos los productos" y
+4:08
+en "cantidad mínima" pondremos 3 y listo, así de fácil.
+4:17
+También queremos que nuestros precios terminen en .99.
+4:21
+Para hacer eso, seleccionaré "fórmula" en "cálculo".
+4:26
+Como te dije, ahora tenemos muchas opciones más.
+4:32
+En el campo "basado en" tendrás un par de opciones,
+4:38
+está "precio de venta", "costo" y "otra lista de precios", si es que la hay.
+4:43
+Tienes todas las opciones que quieras.
+4:46
+Yo pondré "precio de venta", que es el precio de venta del formulario del producto.
+4:52
+El porcentaje de descuento de nuevo será 10.
+4:57
+En "tarifa adicional" pondré un número negativo...
+5:04
+Porque puedo.
+5:08
+Así el precio se redondeará al número entero más cercano y se le restará una decimal.
+5:15
+Así todos mis precios terminarán en .99, como quería.
+5:20
+En márgenes no pondremos nada,
+5:24
+hablaremos de este campo más adelante, no desesperes.
+5:31
+"Aplicar en" se quedará en "todos los productos" y "cantidad mínima" en 3.
+5:38
+Si quisiéramos que esta lista de precios solo fuera válida por un tiempo
+5:42
+lo configuraríamos en "validez", pero no lo haremos por ahora.
+5:48
+Terminé de configurar así que haré clic en "guardar y cerrar".
+5:55
+En el formulario de la lista de precios
+5:58
+veremos la regla que acabamos de configurar.
+6:04
+Vamos a la pestaña "configuración".
+6:07
+Aquí veremos ajustes de los que hablamos en el otro video de lista de precios.
+6:15
+No se te olvide ver ese video.
+6:20
+En este caso trabajaremos en la sección "descuentos".
+6:26
+Aquí elegiremos cómo mostrar la política de descuento en cotizaciones y órdenes de ventas.
+6:31
+Con "descuento incluido en el precio" el cliente verá el precio final con el descuento aplicado.
+6:39
+"Mostrar el precio al público y el descuento al cliente" veremos el precio y el descuento.
+6:47
+De esta forma el cliente verá el descuento que le damos.
+6:52
+Elegiremos esa opción por psicología.
+6:56
+Terminamos de configurar esta lista de precios.
+7:04
+Para ver cómo funcionan los márgenes crearemos otra lista de precios.
+7:11
+Regresaremos a "lista de precios" y crearemos una nueva.
+7:18
+De nombre le pondré "márgenes"...
+7:25
+Así sabremos para qué es esta lista exactamente.
+7:29
+Haremos clic en "agregar línea" y volveremos a ver estas opciones.
+7:35
+Digamos que quiero obtener al menos 20 dólares de ganancia en mis sillas de oficina.
+7:41
+Para hacer eso cambiaremos el campo "basado en",
+7:46
+nosotros le pondremos "costo".
+7:52
+Ahora te permitirá cambiar esto, perfecto.
+7:58
+Ahora en márgenes pondremos 20 y 70.
+8:04
+Un margen de ganancias es la diferencia entre el costo y el precio de venta.
+8:09
+Esto hará que el precio de venta de nuestros productos sea
+8:14
+al menos 20 dólares más que el costo, así el margen de ganancia será al menos 20.
+8:18
+En la sección "condiciones"
+8:22
+cambiaremos el campo "aplicar en" a "producto".
+8:28
+En la lista seleccionaremos el producto deseado, las sillas de oficina.
+8:34
+No tenemos que hacer ninguna otra configuración así que haremos clic en "guardar y cerrar".
+8:40
+Podemos ir a la siguiente parte.
+8:45
+Ahora veamos cómo funcionan los descuentos y los márgenes que acabamos de configurar.
+8:51
+En el tablero de Ventas crearé una nueva cotización.
+8:57
+En el cliente seleccionaré "Azure interior".
+9:03
+En el producto seleccionaré "silla de oficina".
+9:09
+Antes de seguir, hagamos clic en el enlace interno de la silla de oficina.
+9:14
+Nuestro precio de venta es 70 USD y el costo es 55 USD.
+9:18
+Por ahora, nuestro margen de ganancia solo es de 15 USD.
+9:23
+Usaremos las migas de pan para regresar a la cotización
+9:27
+y cambiaré la lista de precios a la de "margen".
+9:31
+Haremos clic en "actualizar precios" > "aceptar" y el precio subió, ¿por qué?
+9:36
+Por que son los 20 USD arriba del costo que configuramos con la lista de precios.
+9:42
+Para que la información de margen aparezca en la cotización, solo selecciónalo aquí.
+9:50
+Digamos que queremos ver qué obtenemos con otra lista de precios.
+9:56
+Veamos qué pasa con la lista de clientes favoritos, solo recuerda cambiar la cantidad a 3.
+10:02
+Selecciona la lista y el precio se actualizará.
+10:06
+Cambió el precio unitario, pero 70x3 no es igual a 188.98.
+10:14
+Vayamos a la vista previa del cliente y fíjate cómo sí cambió.
+10:22
+Aquí verás nuestro precio que termina en .99
+10:26
+y se refleja para que el cliente crea que acaba de conseguir un descuento.
+10:32
+Ahora el cliente verá el descuento y de este lado podremos ver el 210, el resultado real.
+10:38
+Regresemos al modo de edición.
+10:40
+Quería que vieras cómo funciona justo como vimos los márgenes.
+10:46
+Eso es todo, Odooers.
+10:49
+Ya sabes cómo usar descuentos y márgenes con las listas de precios
+10:53
+para que puedas potenciar tus ventas.
+10:57
+Nos vemos.
+
+7.23	Commission Plans | Odoo Sales
+Link: https://www.youtube.com/watch?v=0F0hlB6dl-Q
+Intro
+0:05
+what's up odoers and welcome back
+0:07
+commissions are a powerful tool for
+0:09
+motivating and incentivizing a sales
+0:11
+team they incentivize performance boost
+0:14
+productivity and encourage healthy
+0:16
+competition but commissions can be
+0:18
+difficult to track especially with a
+0:19
+growing sales team where we have
+0:20
+different commission structures since
+0:23
+different sales team have varying
+0:24
+expectations handle different levels of
+0:26
+customers and maybe even manage
+0:28
+different products we often have to
+0:30
+track multiple commission structures all
+0:32
+at the same time here at Stealthy Wood
+0:34
+we're implementing a new commission plan
+0:36
+that calculates each salesperson's
+0:38
+commission quarterly i'm extremely
+0:41
+excited to see sales go up and I'm sure
+0:42
+the sales team is excited for their
+0:44
+reward so let's get started all right
+Commission plans overview
+0:47
+we're getting started here in our sales
+0:49
+app let's make sure sales commissions
+0:51
+are enabled by heading to configuration
+0:53
+followed by settings and we're just
+0:56
+going to scroll all the way down to our
+0:57
+invoicing section and just tick this
+0:59
+checkbox next to commissions and then
+1:02
+we'll click save before moving
+1:05
+on after we save a new commissions
+1:08
+button is available here at our top menu
+1:11
+today we're going to cover how to set up
+1:14
+commission plans and what they look like
+1:16
+for the team on the commissions
+1:17
+dashboard so let's click into
+1:19
+commissions and click on commission
+Setting up a new commission plan
+1:22
+plans and here we see a list of all the
+1:24
+commission plans set up in my company
+1:26
+and a quick overview of their
+1:28
+configurations we'll click new in the
+1:30
+top left
+1:31
+corner and here in the commission plan
+1:34
+configuration form under commission plan
+1:36
+we're going to name this
+1:39
+2025
+1:42
+quarterly and by default a new
+1:44
+commission plan is based on achievements
+1:47
+per salesperson this means that
+1:50
+commissions are based on a flat
+1:51
+percentage of the value of a
+1:53
+salesperson's
+1:54
+invoices let's base this commission plan
+1:57
+on
+2:00
+targets this means that commissions are
+2:02
+awarded based on the percentage of the
+2:04
+target each salesperson hits this opens
+2:07
+up a new field where we can also set the
+2:10
+ontarget commission
+2:12
+this is the dollar amount that each
+2:13
+salesperson will receive if they hit
+2:15
+their target so let's click into this
+2:17
+field and change this from 1,00 to
+2:22
+2,000 now the effective period here on
+2:25
+the right specifies the commission plan
+2:27
+start and end dates determining the
+2:29
+allegible period for paid invoices given
+2:32
+that we're doing this for quarterly
+2:34
+commissions throughout all of 2025 we'll
+2:37
+maintain these start and end dates
+2:40
+this is a quarterly commission plan so
+2:42
+we'll keep this target frequency field
+2:44
+set to quarterly but for other plans we
+2:47
+do also have monthly and yearly but
+2:50
+we're going to keep this on quarterly
+2:52
+like I
+2:53
+mentioned so to set our invoicing
+2:56
+targets we'll click on this targets tab
+2:58
+right
+2:59
+here since we set the target frequency
+3:02
+to quarterly the periods here have been
+3:04
+autopop populated here we can click into
+3:07
+each target field to set the amount to
+3:19
+$10,000 just like
+3:21
+so this is the goal I expect each
+3:24
+salesperson to aim for each quarter we
+3:27
+can grant commissions based on the
+3:28
+performance of an individual salesperson
+3:30
+or on the overall performance of an
+3:32
+entire sales team depending what's
+3:34
+selected here at the top
+3:36
+half if we change this to team
+3:40
+performance these are typically used for
+3:42
+sales managers commissions and that
+3:44
+would mean that my bonus is dependent on
+3:46
+the entire team achieving their goals
+3:48
+however for this plan we're focused on
+3:50
+individual salespeople so I'm going to
+3:52
+change this
+3:54
+back moving on here in the achievements
+3:57
+tab we'll set how we calculate the
+4:00
+target for this plan here we have a few
+4:02
+different options for calculating
+4:04
+targets
+4:05
+like we have quantity sold we have
+4:09
+margin but I want to calculate the
+4:11
+target based off of the amount invoiced
+4:13
+so I'm going to click on amount
+4:15
+invoiced next we'll click on the rate
+4:18
+percentage here on the right and we're
+4:20
+going to change this to 100%
+4:23
+this means that we're using the entire
+4:25
+dollar amount of the invoice to
+4:27
+calculate commission targets now to
+4:30
+assign commission to our salespeople
+4:32
+we'll just click salespeople here on the
+4:34
+right and we'll click add new
+4:38
+salesperson and we're going to select
+4:40
+our newest account manager
+4:43
+Mindy of course we can go back and add
+4:45
+multiple sales people to this plan but
+4:47
+for now we're just going to focus on
+4:49
+Mindy now in the from column right here
+4:52
+this lets us know the first invoice they
+4:54
+sent that falls within the commission
+4:56
+plan's effective period since this plan
+4:59
+is only going to calculate commissions
+5:00
+up to the end of the year we can leave
+5:02
+this two column blank otherwise we can
+5:05
+set the end days for the individual
+5:06
+salespeople in case they need specific
+5:09
+dates that are different from the
+5:11
+plan here in the other plans column this
+5:14
+lets us know the other commission plans
+5:15
+that each salesperson is a part of and
+5:18
+if we quickly add for example Mitchell
+5:20
+admin here it looks like he's assigned
+5:23
+to the manager achievement plan as a
+5:26
+manager we want him to focus on
+5:27
+motivating the team and hitting their
+5:29
+goals instead of participating in this
+5:31
+plan so I'm just going to click the
+5:32
+trash icon on this
+5:34
+line lastly let's set tiers in this
+5:37
+commission tab
+5:41
+examining the target completion field
+5:43
+right here as well as the commission
+5:45
+field we see that each salesperson
+5:47
+earning 100% of their commission will
+5:50
+receive
+5:51
+$2,000 i think that's some great
+5:53
+commission but let's add a few extras
+5:55
+tiers we'll click in the commission
+5:57
+column for 50% here and we're going to
+5:59
+update this to 500
+6:03
+that means if the person hits 50% of
+6:06
+their target they'll be given $500 in
+6:10
+commission of course not bad but what if
+6:12
+we want to motivate sales people to go
+6:14
+above and beyond their target let's add
+6:16
+a couple more percentage points to
+6:17
+sweeten this deal i'll just click add a
+6:20
+new commission level and here I'm going
+6:22
+to type in
+6:25
+150% and in the commission field right
+6:28
+here to the right of it we're going to
+6:29
+update this to 3500
+6:32
+and let's also add another one for
+6:36
+200% and we're going to update this to
+6:42
+$4,000 here in the graph we have a
+6:45
+visual representation of our commission
+6:47
+plan we can see that it's a bit of a
+6:49
+curve with a slow start and it gets
+6:52
+steeper after the 50 to 100% mark
+6:56
+so we're going to click approve here in
+6:58
+the top left corner to begin calculating
+7:01
+commissions to edit this later or add
+7:04
+more salespeople we can use this reset
+7:06
+to draft button once the commission plan
+7:09
+is approved it calculates commissions
+7:11
+for the assigned salespeople based on
+7:13
+confirmed invoices and there you have it
+Outro
+7:16
+odoers stay tuned for more tutorials on
+7:18
+our brand new sales commission feature
+7:20
+and of course catch you in the next
+7:22
+video
+
+7.24	Gelato Connector | Odoo Sales
+Link: https://www.youtube.com/watch?v=l_wf90mwWo0&t=26s
+Intro
+0:05
+what's up o doers and welcome back
+0:08
+stealthy wood recently jumped on that
+0:09
+merch bandwagon with our sister company
+0:12
+stealthy wear our online store is I mean
+0:14
+as the kids say popping off but we're
+0:17
+thinking of designs much faster than we
+0:18
+can produce and ship them but luckily
+0:21
+odu's gelato connector makes it easy to
+0:23
+turn designs into customized print
+0:25
+products as a global print on demand or
+0:27
+pod platform gelato handles all the
+0:30
+production and shipment for products so
+0:32
+we don't have to worry about the
+0:33
+logistics of fulfillment and shipping so
+0:36
+let's get started and see how the ODU
+0:38
+gelato connector takes designs and turns
+0:40
+them into printed
+0:42
+masterpieces so before we configure the
+API & Webhook from Gelato
+0:44
+gelato connector inod do we need to grab
+0:46
+the API credentials and web hooks from
+0:49
+our gelato account an API key is a
+0:52
+unique code that allows ODU to
+0:54
+communicate which aot system it acts
+0:56
+like a digital handshake making sure
+0:58
+only authorized apps can exchange
+1:01
+information web Hook is an automatic
+1:03
+notification system that sends realtime
+1:06
+updates from gelato to Odo whenever
+1:08
+something happens like when an order is
+1:10
+confirmed or delivered okay it's time to
+1:13
+grab the API and web hooks from our
+1:15
+gelato account so here on the left side
+1:18
+of our navigation bar we're going to
+1:19
+select developer and we want to click
+1:22
+into the API key
+1:24
+section from here we're just going to
+1:26
+click add API key and for the name we're
+1:29
+just going to going to type in Odo keep
+1:31
+it something simple and
+1:33
+rememberable and from here we'll just
+1:35
+click create
+1:37
+key so this generated our key which
+1:40
+we'll grab by clicking this copy to
+1:41
+clipboard button and we're also just
+1:43
+going to paste this into a separate
+1:45
+notepad because we're going to need this
+1:47
+later but no worries if the API key gets
+1:49
+lost we can always repeat this step to
+1:52
+create a new key okay next we're just
+1:55
+going to set up a web hook to receive
+1:57
+automatic order updates in Odo so under
+2:00
+the same developer section we're just
+2:02
+going to click web hooks this time on
+2:05
+this web hooks page we're just going to
+2:07
+click ADD web
+2:09
+hook and in the URL field we're just
+2:11
+going to type in our database
+2:15
+URL and under the events field right
+2:18
+here we're going to select order status
+2:20
+updated and this ensures that we'll
+2:22
+receive order changes automatically in
+2:24
+our ODU database directly under that in
+2:27
+our method field we're just going to
+2:29
+select HTTP post and this is the request
+2:33
+method used to send data from gelato to
+2:36
+Odo next we're going to tick this
+2:38
+checkbox right here which allows us to
+2:40
+take authorization to this web hook and
+2:43
+let's also make sure that the header in
+2:45
+gelados product matches the header in
+2:47
+Odo so here in the header name field
+2:50
+we're just going to type in
+2:54
+signature and these are all backend
+2:57
+settings that allow Odo and gelato to
+2:59
+exchange information ensuring that your
+3:01
+orders and updates are processed
+3:03
+correctly next here in the header value
+3:07
+we're just going to click generate
+3:10
+key then we'll go ahead and highlight
+3:13
+and copy the newly generated header
+3:17
+value and we're going to save this for
+3:19
+later so make sure to add this to your
+3:20
+notepad as
+3:23
+well and finally we're just going to
+3:25
+click
+3:27
+create and now we're done with this step
+Gelato connector in Odoo
+3:30
+now let's connect gelato with Odo so
+3:33
+here in the sales app we're just going
+3:35
+to head to configuration and then to
+3:37
+settings and then we're going to scroll
+3:38
+to the bottom to our connector section
+3:42
+and here we want to make sure that the
+3:43
+gelato connector is enabled next we'll
+3:46
+paste in our API key and web hook
+3:54
+key then we're going to click save at
+3:56
+the top
+4:01
+and now we're ready to sync our gelato
+4:02
+product to
+4:04
+Odo okay it's time to make sure that our
+Syncing Gelato Product in Odoo Sales
+4:06
+information is correct inel so we're
+4:09
+going to click our profile picture here
+4:10
+in the top right corner and then click
+4:12
+settings followed by
+4:15
+company to make orders from Odo that go
+4:18
+directly to gelato we need to make sure
+4:20
+that our company name and billing
+4:24
+address are correct this looks good so
+4:27
+we're going to head over to the side
+4:28
+menu and click
+4:32
+templates and today we're going to sync
+4:35
+our posum trucker cap so we'll hover
+4:38
+over this click the three dots that
+4:41
+appear and then we're going to click on
+4:43
+copy template
+4:46
+ID so the product template ID is a
+4:49
+unique identifier that links an ODU
+4:51
+product to its corresponding template in
+4:53
+gelato it allows us to automatically
+4:55
+pull in product variants like the color
+4:57
+options in our hat in this casee we have
+5:00
+white and
+5:02
+pink this makes sure that our products
+5:04
+are consistent across both platforms so
+5:07
+let's see this in action in our Odo
+5:09
+database back in Odo we're going to
+5:12
+navigate to our sales application and
+5:14
+click products at the top followed by
+5:16
+products once again and to create a new
+5:18
+product we're just going to click new in
+5:20
+the top left corner and we're going to
+5:22
+add a name to this product which will be
+5:24
+our posum trucker hat
+5:30
+we're also going to update the retail
+5:31
+price to match the price we have in
+5:33
+gelato which is going to be
+5:36
+$20 next we're going to click into the
+5:39
+sales Tab and here in the gelato section
+5:41
+we have our template reference field
+5:44
+that field we just need to paste in our
+5:45
+template ID from our gelato
+5:49
+product when we paste that in and click
+5:51
+away the synchronized button appears and
+5:53
+when we click synchronize ODU gives us a
+5:56
+confirmation that our product and its
+5:58
+product variants have have been
+5:59
+successfully synchronized so after
+6:02
+synchronizing a print images field also
+6:05
+appears and to make sure the order goes
+6:07
+through the correct product we're going
+6:08
+to click this front embroidery button
+6:11
+and this pop-up window appears here if
+6:13
+we hover over the camera we'll click
+6:15
+this edit pencil icon and we'll go ahead
+6:18
+and upload our product picture for our
+6:21
+posum trucker hat then we'll click save
+6:24
+and
+6:25
+close now it's time to add the product
+6:28
+variant pictures so we're going to click
+6:29
+the variant smart button at the top and
+6:31
+we'll start with our pink variant so
+6:33
+we'll click into the pink posum hat
+6:36
+trucker and click the edit button and
+6:39
+just upload our pink product
+6:43
+image then we'll save this and we'll use
+6:45
+the product variance breadcrumbs to do
+6:48
+the same thing to our white awesome
+6:50
+trucker
+6:56
+hat once we save this we're all set and
+7:00
+now our product variants are ready to go
+Order Gelato product from Odoo
+7:03
+once products are synced they're ready
+7:05
+to sell we can sell gelato products
+7:07
+through our e-commerce store or directly
+7:09
+in the sales app our customer Chris Luda
+7:12
+has been dying for our new hats and
+7:14
+wants to put in a direct order so to do
+7:16
+that I'm just going to click new in this
+7:18
+upper left hand corner and we're going
+7:20
+to add Chris to the customer name
+7:24
+field so here in the order lines we're
+7:26
+just going to add our possum trucker hat
+7:34
+and he said he wants five of the white
+7:36
+ones so we'll just update this
+7:38
+accordingly and then click
+7:41
+confirm now we have to make sure to
+7:44
+account for shipping in our Odo order so
+7:46
+we're going to click this add shipping
+7:48
+button right
+7:50
+here and we'll just use our standard
+7:52
+delivery rate and click get rate
+8:00
+this pulls up the standard delivery
+8:02
+price from gelato so now we'll just
+8:04
+click
+8:05
+add and then to confirm the order we'll
+8:08
+just click
+8:14
+confirm this order has gone through and
+8:17
+gelato will handle the production of the
+8:18
+garments and ship them directly to Chris
+8:21
+and we're free to work on creating more
+8:23
+designs without the hassle of order
+8:25
+production and fulfillment and that's it
+Conclusion
+8:28
+for today o doers we walked through how
+8:30
+to set up our gelato products in our Odo
+8:32
+account now our customers can order
+8:34
+print on demand items directly while we
+8:36
+focus on creating more amazing designs
+8:38
+I'm going to go sketch some more rodents
+8:40
+but I'll catch you in the next video
+
+
+
+****No debes contestar cosas que estén fuera de este contexto, si hay alguna consulta fuera de este contexto, niégate amablemente
+a responder y recuerda tu propósito.****
